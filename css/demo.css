@@ -128,7 +128,7 @@ a {
 .container header {
   width: 100%;
   position: fixed;
-  z-index: 9999;
+  z-index: 9998;
   -webkit-transition: all 0.3s ease-in-out;
   -moz-transition: all 0.3s ease-in-out;
    -o-transition: all 0.3s ease-in-out;

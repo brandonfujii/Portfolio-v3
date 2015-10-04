@@ -3,6 +3,8 @@
 var $service = $(".services li");
 var $header = $("header");
 var $pworks = $("#coming-soon li");
+var $loading = $(".loading");
+var $loadbar = $(".loading hr");
 
 $service.on("mouseover", function() {
 
@@ -60,4 +62,19 @@ $(document).scroll(function() {
 });
 
 
+$(document).ready(function() {
+	loadGrow();
+	window.setTimeout(load, 3000);
+});
 
+function load() {
+	$loading.fadeOut(500);
+
+}
+
+
+function loadGrow() {
+	$loadbar.velocity({
+		width: "100%"
+	}, 2750);
+}

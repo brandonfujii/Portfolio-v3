@@ -49,6 +49,28 @@ $black: #2F363B;
 }
 
 body {
+
+	.loading {
+		width: 100vw;
+		height: 100vh;
+		position: fixed;
+		z-index: 9999;
+		background-color: $black;
+
+		hr {
+		    display: block;
+		    height: 1px;
+		    border: 0;
+		    border-top: 5px solid #ccc;
+		    margin: 1em 0;
+		    padding: 0; 
+		    width: 20px;
+		    @include vertical-align();
+		}
+
+
+	}
+
 	.content-wrapper {
 
 		.services {

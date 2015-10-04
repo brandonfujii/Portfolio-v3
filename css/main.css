@@ -4,6 +4,26 @@
 * {
   box-sizing: border-box; }
 
+body .loading {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  z-index: 9999;
+  background-color: #2F363B; }
+  body .loading hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 5px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+    width: 20px;
+    position: relative;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%); }
+
 body .content-wrapper .services {
   overflow: hidden;
   background-color: #F0F0F0; }
