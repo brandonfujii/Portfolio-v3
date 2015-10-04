@@ -5,6 +5,7 @@ var $header = $("header");
 var $pworks = $("#coming-soon li");
 var $loading = $(".loading");
 var $loadbar = $(".loading hr");
+var $logo = $(".loading .logo");
 
 $service.on("mouseover", function() {
 
@@ -76,5 +77,9 @@ function load() {
 function loadGrow() {
 	$loadbar.velocity({
 		width: "100%"
+	}, 2750);
+
+	$logo.velocity({
+		left: "100%"
 	}, 2750);
 }
