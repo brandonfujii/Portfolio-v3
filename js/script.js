@@ -8,6 +8,7 @@ var $loadbar = $(".loading hr");
 var $logo = $(".loading .logo");
 var $hamburger = $(".hamburger");
 var $navOption = $("header ul li a");
+var $button = $(".button");
 
 $service.on("mouseover", function() {
 
@@ -91,10 +92,24 @@ $hamburger.on('click', function() {
 	$hamburger.toggleClass("active");
 });
 
-$navOption.on("click", function() {
-	var $sect = $("#" + $(this).data("nav"));
-	$sect.velocity("scroll", {duration: 750, offset: -70});
 
+$button.on("click", function(e) {
+	var $sect = $("#" + $(this).data("nav"));
+
+	if ($sect) {
+		$sect.velocity("scroll", {duration: 750, offset: -70});
+	}
+});
+
+$navOption.on("click", function(e) {
+	var $sect = $("#" + $(this).data("nav"));
+
+	if ($sect) {
+		$sect.velocity("scroll", {duration: 750, offset: -70});
+	}
 })
+
+
+
 
 
