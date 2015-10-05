@@ -127,12 +127,19 @@ a {
 
 .container header {
   width: 100%;
+  height: 75px;
   position: fixed;
   z-index: 9998;
+  
   -webkit-transition: all 0.3s ease-in-out;
   -moz-transition: all 0.3s ease-in-out;
    -o-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
+}
+
+.container header.activeScroll {
+  background-color: #fafafa;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
 }
 
 .content-wrapper p{
@@ -146,9 +153,11 @@ a {
 	font-style: normal;
 	text-transform: uppercase;
 	letter-spacing: 5px;
-	margin: 25px;
 	display: inline-block;
 	line-height: 1.1em;
+  position: relative;
+  top: 15px;
+  left: 25px;
 }
 
 
@@ -163,17 +172,19 @@ a {
 header ul {
 	float: right;
 	height: 100%;
-	margin-top: 10px;
+	top: 15px;
 }
 
 header ul li {
 	display: inline-block;
 	margin-right: 20px;
 	font-size: 18px;
+  cursor: pointer;
+  cursor: hand;
 }
 
 header ul li .button {
-	top: 17px;
+	top: 15px;
 	color: #ea6565;
 	border-color: #ea6565;
 }

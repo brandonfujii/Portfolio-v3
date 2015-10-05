@@ -6,6 +6,8 @@ var $pworks = $("#coming-soon li");
 var $loading = $(".loading");
 var $loadbar = $(".loading hr");
 var $logo = $(".loading .logo");
+var $hamburger = $(".hamburger");
+var $navOption = $("header ul li a");
 
 $service.on("mouseover", function() {
 
@@ -55,10 +57,11 @@ $pworks.on("mouseleave", function() {
 
 $(document).scroll(function() {
 	if ($(this).scrollTop() > 0) {
-		$header.css("background-color", "#fafafa");
+		$header.addClass("activeScroll");
+
 
 	} else {
-		$header.css("background-color", "transparent");
+		$header.removeClass("activeScroll");
 	}
 });
 
@@ -83,3 +86,15 @@ function loadGrow() {
 		left: "100%"
 	}, 2750);
 }
+
+$hamburger.on('click', function() {
+	$hamburger.toggleClass("active");
+});
+
+$navOption.on("click", function() {
+	var $sect = $("#" + $(this).data("nav"));
+	$sect.velocity("scroll", {duration: 750, offset: -70});
+
+})
+
+

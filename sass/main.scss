@@ -226,7 +226,7 @@ body {
 				}
 
 				.thumbnail {
-					width: 70%;
+					width: 65%;
 					overflow: hidden;
 					float: left;
 
@@ -251,7 +251,7 @@ body {
 				}
 
 				.desc {
-					width: 30%;
+					width: 35%;
 					height: 100%;
 					background-color: #fafafa;
 					padding: 1% 3% 3% 3%;
@@ -440,5 +440,66 @@ body {
 			text-align: center;
 		}
 
+	}
+}
+
+
+@media screen and (max-width: 950px) {
+	body {
+		.container {
+			header {
+				ul {
+
+					li {
+						display: none;
+					}
+
+					.hamburger {
+						cursor: pointer;
+						cursor: hand;
+						width: 60px;
+						height: 60px;
+						display: block;
+						margin-top: 12px;
+
+
+						span {
+							display: block;
+						 	width: 45px;
+						 	border-bottom: 4px solid $black;
+						 	position: relative;
+							transition: all 300ms ease-in-out;
+							top: 10px;
+						}
+
+						.middle {
+							top:20px;
+						}
+
+						.bottom {
+							top: 30px;
+						}
+
+					}
+
+					.active {
+
+						.top {
+							transform: translateY(17px) rotate(45deg);
+						}
+
+						.middle {
+							opacity: 0;
+						}
+
+						.bottom {
+							transform: translateY(-12px) rotate(-45deg);
+
+						}
+					}
+					
+				}
+			}
+		}
 	}
 }

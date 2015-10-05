@@ -15,17 +15,20 @@
 		teardown: function() {
 			$( this ).off( "resize", $special.handler );
 		},
-		handler: function( event, execAsap ) {
+		handler: function( event, execAsap ) 
+		{
 			// Save the context
 			var context = this,
 				args = arguments,
-				dispatch = function() {
+				dispatch = function()
+				{
 					// set correct event type
 					event.type = "debouncedresize";
 					$event.dispatch.apply( context, args );
 				};
 
-			if ( resizeTimeout ) {
+			if ( resizeTimeout ) 
+			{
 				clearTimeout( resizeTimeout );
 			}
 
