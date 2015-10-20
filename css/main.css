@@ -32,7 +32,7 @@ body .about {
   position: fixed;
   z-index: 9998;
   right: 0;
-  padding-top: 50px; }
+  padding-top: 80px; }
   body .about .exit {
     -webkit-transition: all 0.3s ease-in-out;
     -moz-transition: all 0.3s ease-in-out;
