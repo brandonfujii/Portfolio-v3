@@ -10,6 +10,12 @@ body .loading {
   position: fixed;
   z-index: 9999;
   background-color: #2F363B; }
+  body .loading h1 {
+    font-size: 2em;
+    font-family: "Lato", Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    color: #fafafa;
+    text-align: center; }
   body .loading hr {
     display: block;
     height: 1px;

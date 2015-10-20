@@ -63,8 +63,11 @@ body {
 		z-index: 9999;
 		background-color: $black;
 
-
-
+		h1 {
+			@include font(700, $body, 2em);
+			text-align: center;
+		}
+		
 		hr {
 		    display: block;
 		    height: 1px;
