@@ -10,12 +10,17 @@ body .loading {
   position: fixed;
   z-index: 9999;
   background-color: #2F363B; }
-  body .loading h1 {
+  body .loading h2 {
     font-size: 2em;
     font-family: "Lato", Arial, Helvetica, sans-serif;
     font-weight: 700;
     color: #fafafa;
-    text-align: center; }
+    text-align: center;
+    position: relative;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%); }
   body .loading hr {
     display: block;
     height: 1px;

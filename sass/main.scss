@@ -63,9 +63,10 @@ body {
 		z-index: 9999;
 		background-color: $black;
 
-		h1 {
+		h2 {
 			@include font(700, $body, 2em);
 			text-align: center;
+			@include vertical-align();
 		}
 		
 		hr {
