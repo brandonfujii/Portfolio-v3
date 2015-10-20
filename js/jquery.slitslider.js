@@ -63,7 +63,7 @@
 		// maximum possible scale
 		maxScale : 2,
 		// slideshow on / off
-		autoplay : true,
+		autoplay : false,
 		// keyboard navigation
 		keyboard : true,
 		// time between transitions

@@ -1,60 +1,14 @@
 
 
-var $service = $(".services li");
 var $header = $("header");
-var $pworks = $("#coming-soon li");
 var $loading = $(".loading");
 var $loadbar = $(".loading hr");
-var $logo = $(".loading .logo");
-var $hamburger = $(".hamburger");
 var $navOption = $("header ul li a");
 var $button = $(".button");
+var $exitButton = $(".exit");
+var $aboutButton = $(".about-button");
+var $about = $(".about");
 
-$service.on("mouseover", function() {
-
-	var $graphic =  $(this).find(".graphic");
-
-	$graphic.velocity("stop");
-	$graphic.velocity({
-		top: -150,
-		left: 0
-	}, 300);
-});
-
-
-$service.on("mouseleave", function() {
-	var $graphic =  $(this).find(".graphic");
-
-	$graphic.velocity("stop");
-
-	$graphic.velocity({
-		top: 0,
-		left: 0
-	}, 300);
-});
-
-
-$pworks.on("mouseover", function() {
-	var $content =  $(this).find(".overlay .content");
-
-	$content.velocity("stop");
-	$content.velocity({
-		top: -350,
-		left: 0
-	}, 300);
-});
-
-$pworks.on("mouseleave", function() {
-	var $content = $(this).find(".overlay .content");
-
-	$content.velocity("stop");
-
-	$content.velocity({
-		top: 0,
-		left: 0
-	}, 300);
-
-})
 
 $(document).scroll(function() {
 	if ($(this).scrollTop() > 0) {
@@ -83,17 +37,14 @@ function loadGrow() {
 		width: "100%"
 	}, 2750);
 
-	$logo.velocity({
-		left: "100%"
-	}, 2750);
 }
 
-$hamburger.on('click', function() {
-	$hamburger.toggleClass("active");
-});
 
 
-$button.on("click", function(e) {
+
+
+
+$button.on("click", function() {
 	var $sect = $("#" + $(this).data("nav"));
 
 	if ($sect) {
@@ -108,6 +59,53 @@ $navOption.on("click", function(e) {
 		$sect.velocity("scroll", {duration: 750, offset: -70});
 	}
 })
+
+
+var keys = {37: 1, 38: 1, 39: 1, 40: 1};
+
+function preventDefault(e) {
+  e = e || window.event;
+  if (e.preventDefault)
+      e.preventDefault();
+  e.returnValue = false;  
+}
+
+function preventDefaultForScrollKeys(e) {
+    if (keys[e.keyCode]) {
+        preventDefault(e);
+        return false;
+    }
+}
+
+function disableScroll() {
+  if (window.addEventListener) // older FF
+      window.addEventListener('DOMMouseScroll', preventDefault, false);
+  window.onwheel = preventDefault; // modern standard
+  window.onmousewheel = document.onmousewheel = preventDefault; // older browsers, IE
+  window.ontouchmove  = preventDefault; // mobile
+  document.onkeydown  = preventDefaultForScrollKeys;
+}
+
+function enableScroll() {
+    if (window.removeEventListener)
+        window.removeEventListener('DOMMouseScroll', preventDefault, false);
+    window.onmousewheel = document.onmousewheel = null; 
+    window.onwheel = null; 
+    window.ontouchmove = null;  
+    document.onkeydown = null;  
+}
+
+$exitButton.on("click", function() {
+	$about.fadeOut(500);
+	enableScroll();
+
+});
+
+$aboutButton.on("click", function() {
+	$about.fadeIn(500);
+	disableScroll();
+})
+
 
 
 
