@@ -82,6 +82,7 @@ body {
 		background-size: cover;
 
 		nav {
+			z-index: 9999;
 			background-color: $black;
 			position: fixed;
 			width: 100%;

@@ -10,6 +10,7 @@ body header {
   background: url(../images/wanderlust-mockup.jpg) center center no-repeat fixed;
   background-size: cover; }
   body header nav {
+    z-index: 9999;
     background-color: #2F363B;
     position: fixed;
     width: 100%; }
