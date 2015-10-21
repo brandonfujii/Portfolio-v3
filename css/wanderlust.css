@@ -9,6 +9,42 @@ body header {
   height: 50vh;
   background: url(../images/wanderlust-mockup.jpg) center center no-repeat fixed;
   background-size: cover; }
+  body header nav {
+    background-color: #2F363B;
+    position: fixed;
+    width: 100%; }
+    body header nav ul {
+      padding-top: 10px;
+      padding-bottom: 10px;
+      width: 100%;
+      text-align: center; }
+      body header nav ul li {
+        font-size: 1em;
+        font-family: "Lato", Arial, Helvetica, sans-serif;
+        font-weight: 400;
+        color: #fafafa;
+        display: inline-block;
+        padding: 4px 5px 4px 5px;
+        border: 1px solid #fafafa;
+        border-radius: 3px;
+        margin: 5px;
+        -webkit-transition: all 0.3s ease-in-out;
+        -moz-transition: all 0.3s ease-in-out;
+        -o-transition: all 0.3s ease-in-out;
+        transition: all 0.3s ease-in-out;
+        border-color: transparent;
+        -webkit-transition: all 0.3s ease-in-out;
+        -moz-transition: all 0.3s ease-in-out;
+        -o-transition: all 0.3s ease-in-out;
+        transition: all 0.3s ease-in-out; }
+        body header nav ul li:hover {
+          background-color: #fafafa;
+          color: #fafafa; }
+        body header nav ul li a {
+          color: #fafafa; }
+        body header nav ul li:hover {
+          background-color: transparent;
+          border-color: #fafafa; }
   body header div {
     background-color: rgba(0, 0, 0, 0.5);
     height: 100%; }

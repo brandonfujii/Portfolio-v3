@@ -226,7 +226,9 @@ body {
 			}
 		}
 
-		.connect {
+
+	}		
+	.connect {
 			background-color: $black;
 
 			ul {
@@ -257,7 +259,6 @@ body {
 				@include font(400, $body);
 			}
 		}
-	}
 }
 
 @media screen and (max-width: 1050px) {

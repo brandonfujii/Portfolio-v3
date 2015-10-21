@@ -163,29 +163,29 @@ body .content-wrapper .grid .box {
         background-color: #ea6565;
         color: #fafafa; }
 
-body .content-wrapper .connect {
+body .connect {
   background-color: #2F363B; }
-  body .content-wrapper .connect ul {
+  body .connect ul {
     text-align: center; }
-    body .content-wrapper .connect ul li {
+    body .connect ul li {
       padding-top: 30px;
       padding-bottom: 30px;
       margin-right: 20px;
       display: inline-block; }
-      body .content-wrapper .connect ul li .fa {
+      body .connect ul li .fa {
         -webkit-transition: all 0.3s ease-in-out;
         -moz-transition: all 0.3s ease-in-out;
         -o-transition: all 0.3s ease-in-out;
         transition: all 0.3s ease-in-out;
         font-size: 2em;
         color: #ffffff; }
-        body .content-wrapper .connect ul li .fa:hover {
+        body .connect ul li .fa:hover {
           transform: scale(1.2); }
 
-body .content-wrapper footer {
+body footer {
   background-color: #2F363B;
   padding: 0 30px 30px 30px; }
-  body .content-wrapper footer p {
+  body footer p {
     font-size: 1em;
     font-family: "Lato", Arial, Helvetica, sans-serif;
     font-weight: 400;
