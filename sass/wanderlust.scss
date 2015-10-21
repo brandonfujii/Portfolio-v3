@@ -1,0 +1,389 @@
+@import url(http://fonts.googleapis.com/css?family=Lato:300,400,700,800,900);
+@import url(http://fonts.googleapis.com/css?family=Raleway:100,300,400,700,800,900);
+@import url(https://fonts.googleapis.com/css?family=Droid+Serif:400,700);
+
+$head: "Raleway", Arial, Helvetica, sans-serif;
+$body: "Lato", Arial, Helvetica, sans-serif;
+$serif: "Droid Serif", Arial, Helvetica, sans-serif;
+$darkBlue: #1F2532;
+$red: #ea6565;
+$black: #2F363B;
+
+* {
+  box-sizing: border-box; }
+
+@mixin font($weight, $family: $body, $size: 1em, $color: #fafafa) {
+	font-size: $size;
+	font-family: $family;
+	font-weight: $weight;
+	color: $color;
+}
+@mixin vertical-align($position: relative) {
+  position: $position;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+
+}
+@mixin transition() {
+	-webkit-transition: all 0.3s ease-in-out;
+	-moz-transition: all 0.3s ease-in-out;
+	 -o-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
+}
+
+@mixin tag($color: $red) {
+	@include font(400, $body, 1em, $color);
+	display: inline-block;
+	padding: 4px 5px 4px 5px;
+	border: 1px solid $color;
+	border-radius: 3px;
+	margin: 5px;
+	@include transition();
+
+
+	&:hover {
+		background-color: $color;
+		color: #fafafa;
+						
+	}
+}
+
+@mixin title($color: #fafafa) {
+	@include font(700, $head, 2em, $color);
+	text-align: center;
+}
+@mixin subheader() {
+	@include font(400, $body, 1.25em);
+	text-align:center;
+	padding-top:20px;
+}
+@mixin section($color: $darkBlue) {
+	background-color: $color;
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+
+@mixin body($color: #fafafa) {
+	@include font(300, $body, 1.25em, $color);
+	width: 80%;
+	min-width: 380px;
+	line-height: 1.5em;
+	margin: 0 auto;
+	padding-top: 20px;
+}
+
+body {
+	header {
+		width: 100%;
+		height: 50vh;
+		background: url(../images/wanderlust-mockup.jpg) center center no-repeat fixed;
+		background-size: cover;
+		div {
+			background-color: rgba(0,0,0, 0.5);
+			height: 100%;
+			h1 {
+				@include font(700, $body, 2.5em);
+				text-align: center;
+				padding-top:10%;
+			}
+
+			h2 {
+				@include font(400, $body, 1.5em);
+				text-align: center;
+				padding-top: 20px;
+			}
+		}
+	}
+
+	.description {
+		@include section(#475F77);
+
+		p {
+			@include font(400, $body, 1.25em);
+			width: 80%;
+			margin: 0 auto;
+			line-height: 1.5em;
+		}
+	}
+
+	.skills {
+		@include section($darkBlue);
+		h2 {
+			@include title();
+		}
+
+		ul {
+			padding-top: 30px;
+			text-align:center;
+			li {
+				@include tag(#2980B9);
+				font-size: 1.5em;
+				padding: 7px;
+
+			}
+		}
+	}
+
+	.deliverables {
+		@include section($darkBlue);
+
+		h2 {
+			@include title();
+		}
+
+		ul {
+			padding-top: 30px;
+			text-align: center;
+			li {
+				@include tag(#fafafa);
+				border: 0;
+				&:hover {
+					background-color: transparent;
+
+				}
+				font-size: 1.5em;
+				padding: 7px;
+			}
+		}
+	}
+
+	.explore {
+		@include section(#2980B9);
+
+		h2 {
+			@include title();
+		}
+
+		p {
+			@include subheader();
+		}
+
+		ul {
+			li {
+				width: 60%;
+				min-width: 350px;
+				margin: 0 auto;
+				@include font(300, $body, 1.25em);
+				padding-top: 20px;
+
+			}
+		}
+	}
+
+	.comp {
+		@include section(#4B5F6D);
+
+		h2 {
+			@include title();
+		}
+
+		p {
+			@include subheader();
+			width: 80%;
+			min-width: 380px;
+			line-height: 1.5em;
+			margin: 0 auto;
+		}
+
+		ul {
+			text-align:center;
+
+			li {
+				width: 30%;
+				display: inline-block;
+				overflow:hidden;
+				min-width: 370px;
+				
+				img {
+					@include transition();
+					width: 100%;
+					height: auto;
+
+					&:hover {
+						transform: scale(1.1);
+					}
+				}
+
+			}
+		}
+	}
+
+	.synthesis {
+		@include section($darkBlue);
+
+		h2 {
+			@include title();
+		}
+		p {
+			@include body()
+		}
+	}
+
+	.persona {
+		@include section(#555555);
+
+		h2 {
+			@include title();
+		}
+
+		p {
+			@include body();
+		}
+
+		ul {
+			text-align: center;
+			padding-top: 20px;
+			li {
+				width: 40%;
+				display: inline-block;
+				padding-right: 20px;
+				img {
+					width: 100%;
+					height: 100%;
+
+				}
+			}
+		}
+	}
+
+	.taskflow {
+		@include section(#63799E);
+
+		h2 {
+			@include title();
+		}
+
+		p {
+			@include body();
+		}
+
+		div {
+			width: 100%;
+			img {
+				width: 100%;
+				height: 100%;
+			}
+		}
+	}
+
+	.sketches {
+		@include section(#f2f2f2);
+		text-align: center;
+
+		h2 {
+			@include title($black);
+
+
+		}
+
+		p {
+			@include body($black);
+			text-align: justify;
+		}
+
+		.button {
+			margin: 0 auto;
+			margin-top:20px;
+		}
+	}
+
+	.wireframes {
+		@include section(#f2f2f2);
+		text-align: center;
+
+		h2 {
+			@include title($black);
+		}
+
+		p {
+			@include body($black);
+			text-align: justify;
+		}
+		ul {
+			padding-top: 20px;
+			width: 100%;
+			text-align:center;
+
+			li {
+				width: 35%;
+				display: inline-block;
+				margin-right: 30px;
+				min-width: 370px;
+				img {
+					width: 100%;
+					height: 100%;
+				}
+			}
+
+			li:last-child {
+				margin-right: 0;
+			}
+		}
+		.button {
+			margin-top: 20px;
+		}
+	}
+
+	.final {
+		@include section(#2980B9);
+		text-align:center;
+
+		h2 {
+			@include title();
+		}
+		p {
+			@include body();
+		}
+
+		.button {
+			margin-top: 20px;
+			color: #fafafa;
+			border-color: #fafafa;
+		}
+
+
+		ul {
+
+			margin-top: 30px;
+			li {
+				width: 25%;
+				display: inline-block;
+				min-width: 370px;
+				margin: 10px;
+				img {
+					width: 100%;
+					height: auto;
+				}
+			}
+		}
+	}
+
+}
+
+@media screen and (max-width: 1100px) {
+	body {
+		.persona {
+			ul {
+				li {
+					width: 80%;
+					min-width: 380px;
+					padding: 0;
+				}
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 774px) {
+	body {
+		.wireframes {
+			ul {
+				li {
+					margin-right: 0;
+				}
+			}
+		}
+	}
+}
