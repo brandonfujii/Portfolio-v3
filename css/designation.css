@@ -1,0 +1,167 @@
+@import url(http://fonts.googleapis.com/css?family=Lato:300,400,700,800,900);
+@import url(http://fonts.googleapis.com/css?family=Raleway:100,300,400,700,800,900);
+@import url(https://fonts.googleapis.com/css?family=Droid+Serif:400,700);
+* {
+  box-sizing: border-box; }
+
+body header {
+  width: 100%;
+  height: 50vh;
+  background: url(../images/designationalum.jpg) center center no-repeat fixed;
+  background-size: cover; }
+  body header nav {
+    z-index: 9999;
+    background-color: #2F363B;
+    position: fixed;
+    width: 100%; }
+    body header nav ul {
+      padding-top: 10px;
+      padding-bottom: 10px;
+      width: 100%;
+      text-align: center; }
+      body header nav ul li {
+        font-size: 1em;
+        font-family: "Lato", Arial, Helvetica, sans-serif;
+        font-weight: 400;
+        color: #fafafa;
+        display: inline-block;
+        padding: 4px 5px 4px 5px;
+        border: 1px solid #fafafa;
+        border-radius: 3px;
+        margin: 5px;
+        -webkit-transition: all 0.3s ease-in-out;
+        -moz-transition: all 0.3s ease-in-out;
+        -o-transition: all 0.3s ease-in-out;
+        transition: all 0.3s ease-in-out;
+        border-color: transparent;
+        -webkit-transition: all 0.3s ease-in-out;
+        -moz-transition: all 0.3s ease-in-out;
+        -o-transition: all 0.3s ease-in-out;
+        transition: all 0.3s ease-in-out; }
+        body header nav ul li:hover {
+          background-color: #fafafa;
+          color: #fafafa; }
+        body header nav ul li a {
+          color: #fafafa; }
+        body header nav ul li:hover {
+          background-color: transparent;
+          border-color: #fafafa; }
+      body header nav ul li.active {
+        border-color: #fafafa; }
+  body header div {
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 100%; }
+    body header div h1 {
+      font-size: 2.5em;
+      font-family: "Lato", Arial, Helvetica, sans-serif;
+      font-weight: 700;
+      color: #fafafa;
+      text-align: center;
+      padding-top: 10%; }
+    body header div h2 {
+      font-size: 1.5em;
+      font-family: "Lato", Arial, Helvetica, sans-serif;
+      font-weight: 400;
+      color: #fafafa;
+      text-align: center;
+      padding-top: 20px; }
+
+body .description {
+  background-color: #2F363B;
+  padding-top: 50px;
+  padding-bottom: 50px; }
+  body .description p {
+    font-size: 1.25em;
+    font-family: "Lato", Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    color: #fafafa;
+    width: 80%;
+    margin: 0 auto;
+    line-height: 1.5em; }
+
+body .skills {
+  background-color: #1F2532;
+  padding-top: 50px;
+  padding-bottom: 50px; }
+  body .skills h2 {
+    font-size: 2em;
+    font-family: "Raleway", Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    color: #fafafa;
+    text-align: center; }
+  body .skills ul {
+    padding-top: 30px;
+    text-align: center; }
+    body .skills ul li {
+      font-size: 1em;
+      font-family: "Lato", Arial, Helvetica, sans-serif;
+      font-weight: 400;
+      color: #ea6565;
+      display: inline-block;
+      padding: 4px 5px 4px 5px;
+      border: 1px solid #ea6565;
+      border-radius: 3px;
+      margin: 5px;
+      -webkit-transition: all 0.3s ease-in-out;
+      -moz-transition: all 0.3s ease-in-out;
+      -o-transition: all 0.3s ease-in-out;
+      transition: all 0.3s ease-in-out;
+      font-size: 1.5em;
+      padding: 7px; }
+      body .skills ul li:hover {
+        background-color: #ea6565;
+        color: #fafafa; }
+
+body .deliverables {
+  background-color: #1F2532;
+  padding-top: 50px;
+  padding-bottom: 50px; }
+  body .deliverables h2 {
+    font-size: 2em;
+    font-family: "Raleway", Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    color: #fafafa;
+    text-align: center; }
+  body .deliverables ul {
+    padding-top: 30px;
+    text-align: center; }
+    body .deliverables ul li {
+      font-size: 1em;
+      font-family: "Lato", Arial, Helvetica, sans-serif;
+      font-weight: 400;
+      color: #fafafa;
+      display: inline-block;
+      padding: 4px 5px 4px 5px;
+      border: 1px solid #fafafa;
+      border-radius: 3px;
+      margin: 5px;
+      -webkit-transition: all 0.3s ease-in-out;
+      -moz-transition: all 0.3s ease-in-out;
+      -o-transition: all 0.3s ease-in-out;
+      transition: all 0.3s ease-in-out;
+      border: 0;
+      font-size: 1.5em;
+      padding: 7px; }
+      body .deliverables ul li:hover {
+        background-color: #fafafa;
+        color: #fafafa; }
+      body .deliverables ul li:hover {
+        background-color: transparent; }
+
+body .explore {
+  background-color: #ea6565;
+  padding-top: 50px;
+  padding-bottom: 50px; }
+  body .explore h2 {
+    font-size: 2em;
+    font-family: "Raleway", Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    color: #fafafa;
+    text-align: center; }
+  body .explore p {
+    font-size: 1.25em;
+    font-family: "Lato", Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    color: #fafafa;
+    text-align: center;
+    padding-top: 20px; }

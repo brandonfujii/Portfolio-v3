@@ -74,11 +74,13 @@ $black: #2F363B;
 	padding-top: 20px;
 }
 
+
 body {
+
 	header {
 		width: 100%;
 		height: 50vh;
-		background: url(../images/wanderlust-mockup.jpg) center center no-repeat fixed;
+		background: url(../images/pulseband.jpg) center center no-repeat fixed;
 		background-size: cover;
 
 		nav {
@@ -105,6 +107,7 @@ body {
 						border-color: #fafafa;
 					}
 				}
+
 				li.active {
 					border-color: #fafafa;
 				}
@@ -127,7 +130,7 @@ body {
 		}
 	}
 
-	.description {
+		.description {
 		@include section(#475F77);
 
 		p {
@@ -190,254 +193,6 @@ body {
 			@include subheader();
 		}
 
-		ul {
-			li {
-				width: 60%;
-				min-width: 350px;
-				margin: 0 auto;
-				@include font(300, $body, 1.25em);
-				padding-top: 20px;
-
-			}
-		}
 	}
 
-	.comp {
-		@include section(#4B5F6D);
-
-		h2 {
-			@include title();
-		}
-
-		p {
-			@include subheader();
-			width: 80%;
-			min-width: 380px;
-			line-height: 1.5em;
-			margin: 0 auto;
-		}
-
-		ul {
-			text-align:center;
-
-			li {
-				width: 30%;
-				display: inline-block;
-				overflow:hidden;
-				min-width: 370px;
-				
-				img {
-					@include transition();
-					width: 100%;
-					height: auto;
-
-					&:hover {
-						transform: scale(1.1);
-					}
-				}
-
-			}
-		}
-	}
-
-	.synthesis {
-		@include section($darkBlue);
-
-		h2 {
-			@include title();
-		}
-		p {
-			@include body()
-		}
-	}
-
-	.persona {
-		@include section(#555555);
-
-		h2 {
-			@include title();
-		}
-
-		p {
-			@include body();
-		}
-
-		ul {
-			text-align: center;
-			padding-top: 20px;
-			li {
-				width: 40%;
-				display: inline-block;
-				padding-right: 20px;
-				img {
-					width: 100%;
-					height: 100%;
-
-				}
-			}
-		}
-	}
-
-	.taskflow {
-		@include section(#63799E);
-
-		h2 {
-			@include title();
-		}
-
-		p {
-			@include body();
-		}
-
-		div {
-			width: 100%;
-			img {
-				width: 100%;
-				height: 100%;
-			}
-		}
-	}
-
-	.sketches {
-		@include section(#f2f2f2);
-		text-align: center;
-
-		h2 {
-			@include title($black);
-
-
-		}
-
-		p {
-			@include body($black);
-			text-align: justify;
-		}
-
-		.button {
-			margin: 0 auto;
-			margin-top:20px;
-		}
-	}
-
-	.wireframes {
-		@include section(#f2f2f2);
-		text-align: center;
-
-		h2 {
-			@include title($black);
-		}
-
-		p {
-			@include body($black);
-			text-align: justify;
-		}
-		ul {
-			padding-top: 20px;
-			width: 100%;
-			text-align:center;
-
-			li {
-				width: 35%;
-				display: inline-block;
-				margin-right: 30px;
-				min-width: 370px;
-				img {
-					width: 100%;
-					height: 100%;
-				}
-			}
-
-			li:last-child {
-				margin-right: 0;
-			}
-		}
-		.button {
-			margin-top: 20px;
-		}
-	}
-
-	.final {
-		@include section(#2980B9);
-		text-align:center;
-
-		h2 {
-			@include title();
-		}
-		p {
-			@include body();
-		}
-
-		.button {
-			margin-top: 20px;
-			color: #fafafa;
-			border-color: #fafafa;
-		}
-
-
-		ul {
-
-			margin-top: 30px;
-			li {
-				width: 25%;
-				display: inline-block;
-				min-width: 370px;
-				margin: 10px;
-				img {
-					width: 100%;
-					height: auto;
-				}
-			}
-		}
-	}
-
-}
-
-@media screen and (max-width: 1100px) {
-	body {
-		.persona {
-			ul {
-				li {
-					width: 80%;
-					min-width: 380px;
-					padding: 0;
-				}
-			}
-		}
-	}
-}
-
-@media screen and (max-width: 900px) {
-	body {
-		header {
-			div {
-				h1 {
-					padding-top: 20%;
-				}
-			}
-		}
-	}
-}
-
-@media screen and (max-width: 774px) {
-	body {
-		.wireframes {
-			ul {
-				li {
-					margin-right: 0;
-				}
-			}
-		}
-	}
-}
-
-@media screen and (max-width: 550px) {
-	body {
-		header {
-			div {
-				h1 {
-					padding-top: 35%;
-				}
-			}
-		}
-	}
 }

@@ -46,6 +46,8 @@ body header {
         body header nav ul li:hover {
           background-color: transparent;
           border-color: #fafafa; }
+      body header nav ul li.active {
+        border-color: #fafafa; }
   body header div {
     background-color: rgba(0, 0, 0, 0.5);
     height: 100%; }
