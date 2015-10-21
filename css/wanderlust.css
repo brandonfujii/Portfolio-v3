@@ -226,7 +226,7 @@ body .synthesis {
     font-weight: 300;
     color: #fafafa;
     width: 80%;
-    min-width: 380px;
+    min-width: 360px;
     line-height: 1.5em;
     margin: 0 auto;
     padding-top: 20px; }
@@ -247,7 +247,7 @@ body .persona {
     font-weight: 300;
     color: #fafafa;
     width: 80%;
-    min-width: 380px;
+    min-width: 360px;
     line-height: 1.5em;
     margin: 0 auto;
     padding-top: 20px; }
@@ -278,7 +278,7 @@ body .taskflow {
     font-weight: 300;
     color: #fafafa;
     width: 80%;
-    min-width: 380px;
+    min-width: 360px;
     line-height: 1.5em;
     margin: 0 auto;
     padding-top: 20px; }
@@ -305,7 +305,7 @@ body .sketches {
     font-weight: 300;
     color: #2F363B;
     width: 80%;
-    min-width: 380px;
+    min-width: 360px;
     line-height: 1.5em;
     margin: 0 auto;
     padding-top: 20px;
@@ -331,7 +331,7 @@ body .wireframes {
     font-weight: 300;
     color: #2F363B;
     width: 80%;
-    min-width: 380px;
+    min-width: 360px;
     line-height: 1.5em;
     margin: 0 auto;
     padding-top: 20px;
@@ -370,7 +370,7 @@ body .final {
     font-weight: 300;
     color: #fafafa;
     width: 80%;
-    min-width: 380px;
+    min-width: 360px;
     line-height: 1.5em;
     margin: 0 auto;
     padding-top: 20px; }
@@ -395,6 +395,14 @@ body .final {
     min-width: 380px;
     padding: 0; } }
 
+@media screen and (max-width: 900px) {
+  body header div h1 {
+    padding-top: 20%; } }
+
 @media screen and (max-width: 774px) {
   body .wireframes ul li {
     margin-right: 0; } }
+
+@media screen and (max-width: 550px) {
+  body header div h1 {
+    padding-top: 35%; } }

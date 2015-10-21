@@ -68,7 +68,7 @@ $black: #2F363B;
 @mixin body($color: #fafafa) {
 	@include font(300, $body, 1.25em, $color);
 	width: 80%;
-	min-width: 380px;
+	min-width: 360px;
 	line-height: 1.5em;
 	margin: 0 auto;
 	padding-top: 20px;
@@ -402,12 +402,36 @@ body {
 	}
 }
 
+@media screen and (max-width: 900px) {
+	body {
+		header {
+			div {
+				h1 {
+					padding-top: 20%;
+				}
+			}
+		}
+	}
+}
+
 @media screen and (max-width: 774px) {
 	body {
 		.wireframes {
 			ul {
 				li {
 					margin-right: 0;
+				}
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 550px) {
+	body {
+		header {
+			div {
+				h1 {
+					padding-top: 35%;
 				}
 			}
 		}
