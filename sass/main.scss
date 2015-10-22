@@ -129,7 +129,7 @@ body {
 
 		.bio {
 			width: 55%;
-			min-width: 360px;
+			min-width: 350px;
 			margin: 0 auto;
 			h1 {
 				text-align: center;
@@ -263,10 +263,35 @@ body {
 
 @media screen and (max-width: 1050px) {
 	body {
+
 		.content-wrapper {
 			.grid {
 				.box {
 					width: 100%;
+				}
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 800px) {
+	body {
+		.about {
+			padding-top: 40px;
+			.prof-pic {
+				width: 150px;
+				height: 150px;
+			}
+
+			.bio {
+				h1 {
+					font-size: 1.25em;
+				}
+				h2 {
+					font-size: 1em;
+				}
+				p {
+					font-size: 1em;
 				}
 			}
 		}

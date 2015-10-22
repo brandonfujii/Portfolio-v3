@@ -74,7 +74,7 @@ body .about {
       height: 100%; }
   body .about .bio {
     width: 55%;
-    min-width: 360px;
+    min-width: 350px;
     margin: 0 auto; }
     body .about .bio h1 {
       text-align: center;
@@ -194,6 +194,19 @@ body footer {
 @media screen and (max-width: 1050px) {
   body .content-wrapper .grid .box {
     width: 100%; } }
+
+@media screen and (max-width: 800px) {
+  body .about {
+    padding-top: 40px; }
+    body .about .prof-pic {
+      width: 150px;
+      height: 150px; }
+    body .about .bio h1 {
+      font-size: 1.25em; }
+    body .about .bio h2 {
+      font-size: 1em; }
+    body .about .bio p {
+      font-size: 1em; } }
 
 @media screen and (max-width: 530px) {
   body .content-wrapper .grid .box {
