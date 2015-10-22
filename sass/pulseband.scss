@@ -384,6 +384,17 @@ body {
 
 }
 
+@media screen and (max-width: 900px) {
+	body {
+		header {
+			div {
+				h1 {
+					padding-top: 25%;
+				}
+			}
+		}
+	}
+}
 
 @media screen and (max-width: 795px) {
 	body {
@@ -392,6 +403,18 @@ body {
 				li {
 					margin-right: 0;
 					margin-bottom: 20px;
+				}
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 450px) {
+	body {
+		header {
+			div {
+				h1 {
+					padding-top: 30%;
 				}
 			}
 		}

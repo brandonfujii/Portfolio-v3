@@ -161,7 +161,122 @@ body .explore {
   body .explore p {
     font-size: 1.25em;
     font-family: "Lato", Arial, Helvetica, sans-serif;
+    font-weight: 300;
+    color: #fafafa;
+    width: 80%;
+    min-width: 360px;
+    line-height: 1.5em;
+    margin: 0 auto;
+    padding-top: 20px;
+    font-weight: 700; }
+
+body .design {
+  background-color: #f2f2f2;
+  padding-top: 50px;
+  padding-bottom: 50px; }
+  body .design h2 {
+    font-size: 2em;
+    font-family: "Raleway", Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    color: #2F363B;
+    text-align: center; }
+  body .design p {
+    font-size: 1.25em;
+    font-family: "Lato", Arial, Helvetica, sans-serif;
+    font-weight: 300;
+    color: #2F363B;
+    width: 80%;
+    min-width: 360px;
+    line-height: 1.5em;
+    margin: 0 auto;
+    padding-top: 20px; }
+  body .design ul {
+    margin-top: 20px;
+    text-align: center; }
+    body .design ul li {
+      display: inline-block;
+      margin-top: 20px;
+      width: 40%;
+      min-width: 380px; }
+      body .design ul li img {
+        width: 100%;
+        height: auto; }
+    body .design ul li:first-child {
+      margin-right: 20px; }
+
+body .cards {
+  background-color: #f2f2f2;
+  padding-top: 50px;
+  padding-bottom: 50px; }
+  body .cards h2 {
+    font-size: 2em;
+    font-family: "Raleway", Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    color: #2F363B;
+    text-align: center; }
+  body .cards p {
+    font-size: 1.25em;
+    font-family: "Lato", Arial, Helvetica, sans-serif;
+    font-weight: 300;
+    color: #2F363B;
+    width: 80%;
+    min-width: 360px;
+    line-height: 1.5em;
+    margin: 0 auto;
+    padding-top: 20px; }
+  body .cards div {
+    width: 80%;
+    min-width: 380px;
+    margin: 0 auto;
+    margin-top: 20px; }
+    body .cards div img {
+      width: 100%;
+      height: auto; }
+
+body .development {
+  background-color: #1F2532;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  text-align: center; }
+  body .development h2 {
+    font-size: 2em;
+    font-family: "Raleway", Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    color: #fafafa;
+    text-align: center; }
+  body .development h3 {
+    font-size: 1.25em;
+    font-family: "Lato", Arial, Helvetica, sans-serif;
     font-weight: 400;
     color: #fafafa;
     text-align: center;
     padding-top: 20px; }
+  body .development p {
+    font-size: 1.25em;
+    font-family: "Lato", Arial, Helvetica, sans-serif;
+    font-weight: 300;
+    color: #fafafa;
+    width: 80%;
+    min-width: 360px;
+    line-height: 1.5em;
+    margin: 0 auto;
+    padding-top: 20px;
+    text-align: justify; }
+  body .development .button {
+    margin-top: 30px;
+    color: #fafafa;
+    border-color: #fafafa; }
+  body .development .button:last-child {
+    margin-left: 30px; }
+
+@media screen and (max-width: 900px) {
+  body header div h1 {
+    padding-top: 25%; } }
+
+@media screen and (max-width: 784px) {
+  body .design ul li:first-child {
+    margin-right: 0; } }
+
+@media screen and (max-width: 450px) {
+  body header div h1 {
+    padding-top: 30%; } }

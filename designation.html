@@ -58,9 +58,36 @@
 
 	<section class="explore">
 		<h2>Exploring the Alumni Page</h2>
-		<p>Coming Soon</p>
+		<p>Our client wanted a responsive site with a grid of student thumbnails. By default, the grid would be organized by cohort but the site would have a search function and sorting options to organize by location, discipline, cohort, and availability. In terms of design, we had to use the colors and branding of the existing site. Our objective was to create a user-friendly interface for prospective students and employers and code a search &amp; sort function.</p>
+	</section>
+	<section class="design">
+		<h2>Designing the Site</h2>
+		<p>Given the two-week time constaints, we immediately began sketching and mapping out how each element should be organized. We decided to have a search and filter bar along side a grid with thumbnails, which displayed each student's information when clicked. </p>
+
+		<ul>
+			<li><img src="images/designation-sketch1.jpg" alt="Designation Sketch 1"></li>
+			<li><img src="images/designation-sketch2.jpg" alt="Designation Sketch 2"></li>
+		</ul>
+	</section>
+	<section class="cards">
+		<h2>Card Designs</h2>
+		<p>Each item in the grid was represented as a card with a thumbnail and an expanded view, which displayed each student's name, cohort, discipline, location, and availability. In Illustrator, we mocked up some sample card designs. These are some early iterations: </p>
+		<div><img src="images/carddesigns.jpg" alt="Designation Card Designs"></div>
+		<div><img src="images/expandedcard.jpg" alt="Expanded View"></div>
 	</section>
 
+	<section class="development">
+		<h2>Developing the Site</h2>
+		<h3>HTML/CSS/JS</h3>
+		<p>My teammate worked on the interface and responsiveness of the site. He coded the animations and microinteractions on the page.</p>
+		<h3>AngularJS/IsotopeJS</h3>
+		<p>I worked with AngularJS to populate the page with each cohort (which contained a list of students) and used Isotope to implement a search and sort feature. One pitfall I came across was using Angular and Isotope together. I regret using an MVC framework like Angular because it over-complicated and interfered with what I was trying to create with Isotope; in retrospect, I would have used simple AJAX calls to draw data from our JSON file. Isotope also sets items in a grid to position: absolute which caused issues with our elements in normal flow. Fortunately, we were able to solve this issue but there are still performance problems that I still want to address.</p>
+
+		<a target="_blank" href="http://designation-showcase.pancakeapps.com/" class="button button-fill">Prototype</a>
+		<a target="_blank" href="http://github.com/brandonfujii/designation-alum-page" class="button button-fill">View on Github</a>
+		
+
+	</section>
 	<section class="connect">
 		<ul>
 			<li><a href="mailto:brandonfujii2018@u.northwestern.edu"><i class="fa fa-envelope"></i></a></li>
