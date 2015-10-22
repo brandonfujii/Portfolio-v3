@@ -97,13 +97,12 @@ function enableScroll() {
 
 $exitButton.on("click", function() {
 	$about.fadeOut(500);
-	enableScroll();
 
 });
 
 $aboutButton.on("click", function() {
 	$about.fadeIn(500);
-	disableScroll();
+
 })
 
 
