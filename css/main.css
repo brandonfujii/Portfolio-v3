@@ -103,18 +103,18 @@ body .about {
       margin-right: 20px;
       color: #ffffff;
       border-color: #ffffff; }
-    body .about .connect li {
+    body .about .connect .media {
       margin-top: 25px;
       margin-right: 20px;
       display: inline-block; }
-      body .about .connect li .fa {
+      body .about .connect .media .fa {
         -webkit-transition: all 0.3s ease-in-out;
         -moz-transition: all 0.3s ease-in-out;
         -o-transition: all 0.3s ease-in-out;
         transition: all 0.3s ease-in-out;
         font-size: 2em;
         color: #ffffff; }
-        body .about .connect li .fa:hover {
+        body .about .connect .media .fa:hover {
           transform: scale(1.2); }
     body .about .connect li:last-child {
       margin-right: 0; }
