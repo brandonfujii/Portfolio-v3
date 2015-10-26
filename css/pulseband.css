@@ -69,7 +69,9 @@ body header {
 body .description {
   background-color: #475F77;
   padding-top: 50px;
-  padding-bottom: 50px; }
+  padding-bottom: 50px;
+  padding-right: 25px;
+  padding-left: 25px; }
   body .description p {
     font-size: 1.25em;
     font-family: "Lato", Arial, Helvetica, sans-serif;
@@ -82,7 +84,9 @@ body .description {
 body .skills {
   background-color: #1F2532;
   padding-top: 50px;
-  padding-bottom: 50px; }
+  padding-bottom: 50px;
+  padding-right: 25px;
+  padding-left: 25px; }
   body .skills h2 {
     font-size: 2em;
     font-family: "Raleway", Arial, Helvetica, sans-serif;
@@ -115,7 +119,9 @@ body .skills {
 body .deliverables {
   background-color: #1F2532;
   padding-top: 50px;
-  padding-bottom: 50px; }
+  padding-bottom: 50px;
+  padding-right: 25px;
+  padding-left: 25px; }
   body .deliverables h2 {
     font-size: 2em;
     font-family: "Raleway", Arial, Helvetica, sans-serif;
@@ -151,7 +157,9 @@ body .deliverables {
 body .explore {
   background-color: #2980B9;
   padding-top: 50px;
-  padding-bottom: 50px; }
+  padding-bottom: 50px;
+  padding-right: 25px;
+  padding-left: 25px; }
   body .explore h2 {
     font-size: 2em;
     font-family: "Raleway", Arial, Helvetica, sans-serif;
@@ -163,22 +171,22 @@ body .explore {
     font-family: "Lato", Arial, Helvetica, sans-serif;
     font-weight: 300;
     color: #fafafa;
-    width: 80%;
-    min-width: 360px;
     line-height: 1.5em;
     margin: 0 auto;
     padding-top: 20px;
+    width: 80%;
+    min-width: 300px;
     font-weight: 700; }
   body .explore ul {
     font-size: 1.25em;
     font-family: "Lato", Arial, Helvetica, sans-serif;
     font-weight: 300;
     color: #fafafa;
-    width: 80%;
-    min-width: 360px;
     line-height: 1.5em;
     margin: 0 auto;
-    padding-top: 20px; }
+    padding-top: 20px;
+    width: 80%;
+    min-width: 300px; }
     body .explore ul li {
       margin-left: 50px;
       list-style: square; }
@@ -186,7 +194,9 @@ body .explore {
 body .sprint {
   background-color: #f2f2f2;
   padding-top: 50px;
-  padding-bottom: 50px; }
+  padding-bottom: 50px;
+  padding-right: 25px;
+  padding-left: 25px; }
   body .sprint h2 {
     font-size: 2em;
     font-family: "Raleway", Arial, Helvetica, sans-serif;
@@ -198,29 +208,31 @@ body .sprint {
     font-family: "Lato", Arial, Helvetica, sans-serif;
     font-weight: 300;
     color: #2F363B;
-    width: 80%;
-    min-width: 360px;
     line-height: 1.5em;
     margin: 0 auto;
     padding-top: 20px;
+    width: 80%;
+    min-width: 300px;
     font-weight: 700; }
   body .sprint ul {
     font-size: 1.25em;
     font-family: "Lato", Arial, Helvetica, sans-serif;
     font-weight: 300;
     color: #2F363B;
-    width: 80%;
-    min-width: 360px;
     line-height: 1.5em;
     margin: 0 auto;
-    padding-top: 20px; }
+    padding-top: 20px;
+    width: 80%;
+    min-width: 300px; }
     body .sprint ul li {
       margin-left: 50px; }
 
 body .design {
   background-color: #02336D;
   padding-top: 50px;
-  padding-bottom: 50px; }
+  padding-bottom: 50px;
+  padding-right: 25px;
+  padding-left: 25px; }
   body .design h2 {
     font-size: 2em;
     font-family: "Raleway", Arial, Helvetica, sans-serif;
@@ -232,11 +244,11 @@ body .design {
     font-family: "Lato", Arial, Helvetica, sans-serif;
     font-weight: 300;
     color: #fafafa;
-    width: 80%;
-    min-width: 360px;
     line-height: 1.5em;
     margin: 0 auto;
-    padding-top: 20px; }
+    padding-top: 20px;
+    width: 80%;
+    min-width: 300px; }
   body .design ul {
     text-align: center;
     margin-top: 30px; }
@@ -264,7 +276,9 @@ body .design {
 body .style {
   background-color: #02336D;
   padding-top: 50px;
-  padding-bottom: 50px; }
+  padding-bottom: 50px;
+  padding-right: 25px;
+  padding-left: 25px; }
   body .style h3 {
     font-size: 2em;
     font-family: "Raleway", Arial, Helvetica, sans-serif;
@@ -276,11 +290,11 @@ body .style {
     font-family: "Lato", Arial, Helvetica, sans-serif;
     font-weight: 300;
     color: #fafafa;
-    width: 80%;
-    min-width: 360px;
     line-height: 1.5em;
     margin: 0 auto;
     padding-top: 20px;
+    width: 80%;
+    min-width: 300px;
     text-align: center; }
   body .style div {
     text-align: center;
@@ -293,7 +307,9 @@ body .style {
 body .sketch {
   background-color: #02336D;
   padding-top: 50px;
-  padding-bottom: 50px; }
+  padding-bottom: 50px;
+  padding-right: 25px;
+  padding-left: 25px; }
   body .sketch h2 {
     font-size: 2em;
     font-family: "Raleway", Arial, Helvetica, sans-serif;
@@ -305,11 +321,11 @@ body .sketch {
     font-family: "Lato", Arial, Helvetica, sans-serif;
     font-weight: 300;
     color: #fafafa;
-    width: 80%;
-    min-width: 360px;
     line-height: 1.5em;
     margin: 0 auto;
     padding-top: 20px;
+    width: 80%;
+    min-width: 300px;
     text-align: center; }
   body .sketch ul {
     margin-top: 30px;
@@ -326,7 +342,9 @@ body .sketch {
 body .final {
   background-color: #02336D;
   padding-top: 50px;
-  padding-bottom: 50px; }
+  padding-bottom: 50px;
+  padding-right: 25px;
+  padding-left: 25px; }
   body .final h2 {
     font-size: 2em;
     font-family: "Raleway", Arial, Helvetica, sans-serif;
@@ -338,11 +356,11 @@ body .final {
     font-family: "Lato", Arial, Helvetica, sans-serif;
     font-weight: 300;
     color: #fafafa;
-    width: 80%;
-    min-width: 360px;
     line-height: 1.5em;
     margin: 0 auto;
     padding-top: 20px;
+    width: 80%;
+    min-width: 300px;
     text-align: center; }
   body .final ul {
     text-align: center; }
@@ -358,7 +376,9 @@ body .final {
 body .frontend {
   background-color: #475F77;
   padding-top: 50px;
-  padding-bottom: 50px; }
+  padding-bottom: 50px;
+  padding-right: 25px;
+  padding-left: 25px; }
   body .frontend h2 {
     font-size: 2em;
     font-family: "Raleway", Arial, Helvetica, sans-serif;
@@ -370,17 +390,19 @@ body .frontend {
     font-family: "Lato", Arial, Helvetica, sans-serif;
     font-weight: 300;
     color: #fafafa;
-    width: 80%;
-    min-width: 360px;
     line-height: 1.5em;
     margin: 0 auto;
-    padding-top: 20px; }
+    padding-top: 20px;
+    width: 80%;
+    min-width: 300px; }
 
 body .angular {
   text-align: center;
   background-color: #2980B9;
   padding-top: 50px;
-  padding-bottom: 50px; }
+  padding-bottom: 50px;
+  padding-right: 25px;
+  padding-left: 25px; }
   body .angular h2 {
     font-size: 2em;
     font-family: "Raleway", Arial, Helvetica, sans-serif;
@@ -392,11 +414,11 @@ body .angular {
     font-family: "Lato", Arial, Helvetica, sans-serif;
     font-weight: 300;
     color: #fafafa;
-    width: 80%;
-    min-width: 360px;
     line-height: 1.5em;
     margin: 0 auto;
     padding-top: 20px;
+    width: 80%;
+    min-width: 300px;
     text-align: justify; }
   body .angular .button {
     margin-top: 30px;

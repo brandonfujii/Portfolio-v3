@@ -63,15 +63,17 @@ $black: #2F363B;
 	background-color: $color;
 	padding-top: 50px;
 	padding-bottom: 50px;
+	padding-right: 25px;
+	padding-left: 25px;
 }
 
 @mixin body($color: #fafafa) {
 	@include font(300, $body, 1.25em, $color);
-	width: 80%;
-	min-width: 360px;
 	line-height: 1.5em;
 	margin: 0 auto;
 	padding-top: 20px;
+	width: 80%;
+	min-width: 300px;
 }
 
 
