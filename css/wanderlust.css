@@ -69,7 +69,9 @@ body header {
 body .description {
   background-color: #475F77;
   padding-top: 50px;
-  padding-bottom: 50px; }
+  padding-bottom: 50px;
+  padding-right: 25px;
+  padding-left: 25px; }
   body .description p {
     font-size: 1.25em;
     font-family: "Lato", Arial, Helvetica, sans-serif;
@@ -82,7 +84,9 @@ body .description {
 body .skills {
   background-color: #1F2532;
   padding-top: 50px;
-  padding-bottom: 50px; }
+  padding-bottom: 50px;
+  padding-right: 25px;
+  padding-left: 25px; }
   body .skills h2 {
     font-size: 2em;
     font-family: "Raleway", Arial, Helvetica, sans-serif;
@@ -115,7 +119,9 @@ body .skills {
 body .deliverables {
   background-color: #1F2532;
   padding-top: 50px;
-  padding-bottom: 50px; }
+  padding-bottom: 50px;
+  padding-right: 25px;
+  padding-left: 25px; }
   body .deliverables h2 {
     font-size: 2em;
     font-family: "Raleway", Arial, Helvetica, sans-serif;
@@ -151,7 +157,9 @@ body .deliverables {
 body .explore {
   background-color: #2980B9;
   padding-top: 50px;
-  padding-bottom: 50px; }
+  padding-bottom: 50px;
+  padding-right: 25px;
+  padding-left: 25px; }
   body .explore h2 {
     font-size: 2em;
     font-family: "Raleway", Arial, Helvetica, sans-serif;
@@ -167,7 +175,7 @@ body .explore {
     padding-top: 20px; }
   body .explore ul li {
     width: 60%;
-    min-width: 350px;
+    min-width: 250px;
     margin: 0 auto;
     font-size: 1.25em;
     font-family: "Lato", Arial, Helvetica, sans-serif;
@@ -178,7 +186,9 @@ body .explore {
 body .comp {
   background-color: #4B5F6D;
   padding-top: 50px;
-  padding-bottom: 50px; }
+  padding-bottom: 50px;
+  padding-right: 25px;
+  padding-left: 25px; }
   body .comp h2 {
     font-size: 2em;
     font-family: "Raleway", Arial, Helvetica, sans-serif;
@@ -193,7 +203,7 @@ body .comp {
     text-align: center;
     padding-top: 20px;
     width: 80%;
-    min-width: 380px;
+    min-width: 250px;
     line-height: 1.5em;
     margin: 0 auto; }
   body .comp ul {
@@ -202,7 +212,7 @@ body .comp {
       width: 30%;
       display: inline-block;
       overflow: hidden;
-      min-width: 370px; }
+      min-width: 250px; }
       body .comp ul li img {
         -webkit-transition: all 0.3s ease-in-out;
         -moz-transition: all 0.3s ease-in-out;
@@ -216,7 +226,9 @@ body .comp {
 body .synthesis {
   background-color: #1F2532;
   padding-top: 50px;
-  padding-bottom: 50px; }
+  padding-bottom: 50px;
+  padding-right: 25px;
+  padding-left: 25px; }
   body .synthesis h2 {
     font-size: 2em;
     font-family: "Raleway", Arial, Helvetica, sans-serif;
@@ -228,16 +240,18 @@ body .synthesis {
     font-family: "Lato", Arial, Helvetica, sans-serif;
     font-weight: 300;
     color: #fafafa;
-    width: 80%;
-    min-width: 360px;
     line-height: 1.5em;
     margin: 0 auto;
-    padding-top: 20px; }
+    padding-top: 20px;
+    width: 80%;
+    min-width: 300px; }
 
 body .persona {
   background-color: #555555;
   padding-top: 50px;
-  padding-bottom: 50px; }
+  padding-bottom: 50px;
+  padding-right: 25px;
+  padding-left: 25px; }
   body .persona h2 {
     font-size: 2em;
     font-family: "Raleway", Arial, Helvetica, sans-serif;
@@ -249,11 +263,11 @@ body .persona {
     font-family: "Lato", Arial, Helvetica, sans-serif;
     font-weight: 300;
     color: #fafafa;
-    width: 80%;
-    min-width: 360px;
     line-height: 1.5em;
     margin: 0 auto;
-    padding-top: 20px; }
+    padding-top: 20px;
+    width: 80%;
+    min-width: 300px; }
   body .persona ul {
     text-align: center;
     padding-top: 20px; }
@@ -268,7 +282,9 @@ body .persona {
 body .taskflow {
   background-color: #63799E;
   padding-top: 50px;
-  padding-bottom: 50px; }
+  padding-bottom: 50px;
+  padding-right: 25px;
+  padding-left: 25px; }
   body .taskflow h2 {
     font-size: 2em;
     font-family: "Raleway", Arial, Helvetica, sans-serif;
@@ -280,11 +296,11 @@ body .taskflow {
     font-family: "Lato", Arial, Helvetica, sans-serif;
     font-weight: 300;
     color: #fafafa;
-    width: 80%;
-    min-width: 360px;
     line-height: 1.5em;
     margin: 0 auto;
-    padding-top: 20px; }
+    padding-top: 20px;
+    width: 80%;
+    min-width: 300px; }
   body .taskflow div {
     width: 100%; }
     body .taskflow div img {
@@ -295,6 +311,8 @@ body .sketches {
   background-color: #f2f2f2;
   padding-top: 50px;
   padding-bottom: 50px;
+  padding-right: 25px;
+  padding-left: 25px;
   text-align: center; }
   body .sketches h2 {
     font-size: 2em;
@@ -307,11 +325,11 @@ body .sketches {
     font-family: "Lato", Arial, Helvetica, sans-serif;
     font-weight: 300;
     color: #2F363B;
-    width: 80%;
-    min-width: 360px;
     line-height: 1.5em;
     margin: 0 auto;
     padding-top: 20px;
+    width: 80%;
+    min-width: 300px;
     text-align: justify; }
   body .sketches .button {
     margin: 0 auto;
@@ -321,6 +339,8 @@ body .wireframes {
   background-color: #f2f2f2;
   padding-top: 50px;
   padding-bottom: 50px;
+  padding-right: 25px;
+  padding-left: 25px;
   text-align: center; }
   body .wireframes h2 {
     font-size: 2em;
@@ -333,11 +353,11 @@ body .wireframes {
     font-family: "Lato", Arial, Helvetica, sans-serif;
     font-weight: 300;
     color: #2F363B;
-    width: 80%;
-    min-width: 360px;
     line-height: 1.5em;
     margin: 0 auto;
     padding-top: 20px;
+    width: 80%;
+    min-width: 300px;
     text-align: justify; }
   body .wireframes ul {
     padding-top: 20px;
@@ -347,7 +367,7 @@ body .wireframes {
       width: 35%;
       display: inline-block;
       margin-right: 30px;
-      min-width: 370px; }
+      min-width: 250px; }
       body .wireframes ul li img {
         width: 100%;
         height: 100%; }
@@ -360,6 +380,8 @@ body .final {
   background-color: #2980B9;
   padding-top: 50px;
   padding-bottom: 50px;
+  padding-right: 25px;
+  padding-left: 25px;
   text-align: center; }
   body .final h2 {
     font-size: 2em;
@@ -372,11 +394,11 @@ body .final {
     font-family: "Lato", Arial, Helvetica, sans-serif;
     font-weight: 300;
     color: #fafafa;
-    width: 80%;
-    min-width: 360px;
     line-height: 1.5em;
     margin: 0 auto;
-    padding-top: 20px; }
+    padding-top: 20px;
+    width: 80%;
+    min-width: 300px; }
   body .final .button {
     margin-top: 20px;
     color: #fafafa;
@@ -386,7 +408,7 @@ body .final {
     body .final ul li {
       width: 25%;
       display: inline-block;
-      min-width: 370px;
+      min-width: 250px;
       margin: 10px; }
       body .final ul li img {
         width: 100%;
@@ -395,7 +417,7 @@ body .final {
 @media screen and (max-width: 1100px) {
   body .persona ul li {
     width: 80%;
-    min-width: 380px;
+    min-width: 250px;
     padding: 0; } }
 
 @media screen and (max-width: 900px) {
