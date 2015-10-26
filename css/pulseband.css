@@ -256,7 +256,7 @@ body .design {
       display: inline-block;
       overflow: hidden;
       width: 25%;
-      min-width: 350px;
+      min-width: 300px;
       margin-right: 30px; }
       body .design ul li img {
         -webkit-transition: all 0.3s ease-in-out;
@@ -301,7 +301,7 @@ body .style {
     margin-top: 20px; }
     body .style div img {
       width: 80%;
-      min-width: 350px;
+      min-width: 300px;
       height: auto; }
 
 body .sketch {
@@ -334,7 +334,7 @@ body .sketch {
       display: inline-block;
       width: 35%;
       margin: 10px;
-      min-width: 350px; }
+      min-width: 300px; }
       body .sketch ul li img {
         width: 100%;
         height: auto; }
@@ -368,7 +368,7 @@ body .final {
       padding-top: 20px;
       margin: 0 auto;
       width: 80%;
-      min-width: 350px; }
+      min-width: 300px; }
       body .final ul li img {
         width: 100%;
         height: auto; }
