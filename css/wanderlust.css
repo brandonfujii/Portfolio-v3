@@ -48,6 +48,8 @@ body header {
           border-color: #fafafa; }
       body header nav ul li.active {
         border-color: #fafafa; }
+      body header nav ul li.mobile {
+        display: none; }
   body header div {
     background-color: rgba(0, 0, 0, 0.5);
     height: 100%; }
@@ -431,3 +433,13 @@ body .final {
 @media screen and (max-width: 550px) {
   body header div h1 {
     padding-top: 35%; } }
+
+@media screen and (max-width: 500px) {
+  body header nav ul li.mobile {
+    display: inline-block;
+    padding: 0;
+    font-size: 20px; }
+    body header nav ul li.mobile:hover {
+      border-color: transparent; }
+  body header nav ul li.home {
+    display: none; } }

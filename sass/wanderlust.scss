@@ -110,6 +110,9 @@ body {
 				li.active {
 					border-color: #fafafa;
 				}
+				li.mobile {
+					display: none;
+				}
 			}
 		}
 		div {
@@ -439,6 +442,31 @@ body {
 				h1 {
 					padding-top: 35%;
 				}
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 500px) {
+	body {
+		header {
+			nav {
+				ul {
+					li.mobile {
+						display: inline-block;
+						padding: 0;
+						font-size: 20px;
+
+						&:hover {
+							border-color: transparent;
+						}
+					}
+
+					li.home {
+						display: none;
+					}
+				}
+				
 			}
 		}
 	}
