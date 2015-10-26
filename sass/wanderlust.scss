@@ -447,27 +447,3 @@ body {
 	}
 }
 
-@media screen and (max-width: 500px) {
-	body {
-		header {
-			nav {
-				ul {
-					li.mobile {
-						display: inline-block;
-						padding: 0;
-						font-size: 20px;
-
-						&:hover {
-							border-color: transparent;
-						}
-					}
-
-					li.home {
-						display: none;
-					}
-				}
-				
-			}
-		}
-	}
-}

@@ -433,13 +433,3 @@ body .final {
 @media screen and (max-width: 550px) {
   body header div h1 {
     padding-top: 35%; } }
-
-@media screen and (max-width: 500px) {
-  body header nav ul li.mobile {
-    display: inline-block;
-    padding: 0;
-    font-size: 20px; }
-    body header nav ul li.mobile:hover {
-      border-color: transparent; }
-  body header nav ul li.home {
-    display: none; } }
