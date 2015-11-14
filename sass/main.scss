@@ -210,12 +210,6 @@ body {
 					}
 				}
 
-				.virtualsitter {
-					img {
-						height: 150%;
-					}
-				}
-
 				.info {
 					@include transition();
 					z-index: 10;

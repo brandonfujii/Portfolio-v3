@@ -129,8 +129,6 @@ body .content-wrapper {
         width: auto; }
         body .content-wrapper .grid .box .img img {
           height: 100%; }
-      body .content-wrapper .grid .box .virtualsitter img {
-        height: 150%; }
       body .content-wrapper .grid .box .info {
         -webkit-transition: all 0.3s ease-in-out;
         -moz-transition: all 0.3s ease-in-out;
