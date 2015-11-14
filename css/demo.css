@@ -175,13 +175,19 @@ a {
 
 }
 
+.nav ul li a {
+  opacity: 0.5;
+}
+
 .nav ul li a:hover {
   color: #000000;
+  opacity: 1;
 
 }
 
 .nav ul li a.active {
   color: #000000;
+  opacity: 1;
 }
 
 
