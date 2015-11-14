@@ -4,6 +4,15 @@
 * {
   box-sizing: border-box; }
 
+body .mobile-menu ul li a.active {
+  background-color: #24292d; }
+
+body .mobile-menu .mobile-icon.active {
+  -webkit-transform: translateY(400%);
+  -moz-transform: translateY(400%);
+  -o-transform: translateY(400%);
+  transform: translateY(400%); }
+
 body header {
   width: 100%;
   height: 50vh;
@@ -11,7 +20,7 @@ body header {
   background-size: cover; }
   body header nav {
     z-index: 9999;
-    background-color: #2F363B;
+    background-color: #323232;
     position: fixed;
     width: 100%; }
     body header nav ul {
@@ -29,18 +38,11 @@ body header {
         border: 1px solid #fafafa;
         border-radius: 3px;
         margin: 5px;
-        -webkit-transition: all 0.3s ease-in-out;
-        -moz-transition: all 0.3s ease-in-out;
-        -o-transition: all 0.3s ease-in-out;
-        transition: all 0.3s ease-in-out;
         border-color: transparent;
         -webkit-transition: all 0.3s ease-in-out;
         -moz-transition: all 0.3s ease-in-out;
         -o-transition: all 0.3s ease-in-out;
         transition: all 0.3s ease-in-out; }
-        body header nav ul li:hover {
-          background-color: #fafafa;
-          color: #fafafa; }
         body header nav ul li a {
           color: #fafafa; }
         body header nav ul li:hover {
@@ -69,31 +71,33 @@ body header {
       padding-top: 20px; }
 
 body .description {
-  background-color: #475F77;
+  background-color: #fafafa;
   padding-top: 50px;
   padding-bottom: 50px;
   padding-right: 25px;
-  padding-left: 25px; }
+  padding-left: 25px;
+  border-top: 1px solid #d4d4d4;
+  border-bottom: 1px solid #d4d4d4; }
   body .description p {
     font-size: 1.25em;
     font-family: "Lato", Arial, Helvetica, sans-serif;
     font-weight: 400;
-    color: #fafafa;
+    color: #323232;
     width: 80%;
     margin: 0 auto;
     line-height: 1.5em; }
 
 body .skills {
-  background-color: #1F2532;
+  background-color: #ffffff;
   padding-top: 50px;
   padding-bottom: 50px;
   padding-right: 25px;
   padding-left: 25px; }
   body .skills h2 {
-    font-size: 2em;
-    font-family: "Raleway", Arial, Helvetica, sans-serif;
+    font-size: 1.5em;
+    font-family: "Proxima Nova", "Lato", Arial, Helvetica, sans-serif;
     font-weight: 700;
-    color: #fafafa;
+    color: #323232;
     text-align: center; }
   body .skills ul {
     padding-top: 30px;
@@ -108,27 +112,19 @@ body .skills {
       border: 1px solid #2980B9;
       border-radius: 3px;
       margin: 5px;
-      -webkit-transition: all 0.3s ease-in-out;
-      -moz-transition: all 0.3s ease-in-out;
-      -o-transition: all 0.3s ease-in-out;
-      transition: all 0.3s ease-in-out;
-      font-size: 1.5em;
       padding: 7px; }
-      body .skills ul li:hover {
-        background-color: #2980B9;
-        color: #fafafa; }
 
 body .deliverables {
-  background-color: #1F2532;
+  background-color: #ffffff;
   padding-top: 50px;
   padding-bottom: 50px;
   padding-right: 25px;
   padding-left: 25px; }
   body .deliverables h2 {
-    font-size: 2em;
-    font-family: "Raleway", Arial, Helvetica, sans-serif;
+    font-size: 1.5em;
+    font-family: "Proxima Nova", "Lato", Arial, Helvetica, sans-serif;
     font-weight: 700;
-    color: #fafafa;
+    color: #323232;
     text-align: center; }
   body .deliverables ul {
     padding-top: 30px;
@@ -137,42 +133,36 @@ body .deliverables {
       font-size: 1em;
       font-family: "Lato", Arial, Helvetica, sans-serif;
       font-weight: 400;
-      color: #fafafa;
+      color: #323232;
       display: inline-block;
       padding: 4px 5px 4px 5px;
-      border: 1px solid #fafafa;
+      border: 1px solid #323232;
       border-radius: 3px;
       margin: 5px;
-      -webkit-transition: all 0.3s ease-in-out;
-      -moz-transition: all 0.3s ease-in-out;
-      -o-transition: all 0.3s ease-in-out;
-      transition: all 0.3s ease-in-out;
       border: 0;
-      font-size: 1.5em;
       padding: 7px; }
-      body .deliverables ul li:hover {
-        background-color: #fafafa;
-        color: #fafafa; }
       body .deliverables ul li:hover {
         background-color: transparent; }
 
 body .explore {
-  background-color: #2980B9;
+  background-color: #fafafa;
   padding-top: 50px;
   padding-bottom: 50px;
   padding-right: 25px;
-  padding-left: 25px; }
+  padding-left: 25px;
+  border-top: 1px solid #d4d4d4;
+  border-bottom: 1px solid #d4d4d4; }
   body .explore h2 {
-    font-size: 2em;
-    font-family: "Raleway", Arial, Helvetica, sans-serif;
+    font-size: 1.5em;
+    font-family: "Proxima Nova", "Lato", Arial, Helvetica, sans-serif;
     font-weight: 700;
-    color: #fafafa;
+    color: #323232;
     text-align: center; }
   body .explore p {
     font-size: 1.25em;
     font-family: "Lato", Arial, Helvetica, sans-serif;
     font-weight: 400;
-    color: #fafafa;
+    color: #323232;
     text-align: center;
     padding-top: 20px; }
   body .explore ul li {
@@ -182,7 +172,7 @@ body .explore {
     font-size: 1.25em;
     font-family: "Lato", Arial, Helvetica, sans-serif;
     font-weight: 300;
-    color: #fafafa;
+    color: #323232;
     padding-top: 20px; }
 
 body .comp {
@@ -192,8 +182,8 @@ body .comp {
   padding-right: 25px;
   padding-left: 25px; }
   body .comp h2 {
-    font-size: 2em;
-    font-family: "Raleway", Arial, Helvetica, sans-serif;
+    font-size: 1.5em;
+    font-family: "Proxima Nova", "Lato", Arial, Helvetica, sans-serif;
     font-weight: 700;
     color: #fafafa;
     text-align: center; }
@@ -226,22 +216,24 @@ body .comp {
           transform: scale(1.1); }
 
 body .synthesis {
-  background-color: #1F2532;
+  background-color: #fafafa;
   padding-top: 50px;
   padding-bottom: 50px;
   padding-right: 25px;
-  padding-left: 25px; }
+  padding-left: 25px;
+  border-top: 1px solid #d4d4d4;
+  border-bottom: 1px solid #d4d4d4; }
   body .synthesis h2 {
-    font-size: 2em;
-    font-family: "Raleway", Arial, Helvetica, sans-serif;
+    font-size: 1.5em;
+    font-family: "Proxima Nova", "Lato", Arial, Helvetica, sans-serif;
     font-weight: 700;
-    color: #fafafa;
+    color: #323232;
     text-align: center; }
   body .synthesis p {
     font-size: 1.25em;
     font-family: "Lato", Arial, Helvetica, sans-serif;
     font-weight: 300;
-    color: #fafafa;
+    color: #323232;
     line-height: 1.5em;
     margin: 0 auto;
     padding-top: 20px;
@@ -249,22 +241,22 @@ body .synthesis {
     min-width: 300px; }
 
 body .persona {
-  background-color: #555555;
+  background-color: #ffffff;
   padding-top: 50px;
   padding-bottom: 50px;
   padding-right: 25px;
   padding-left: 25px; }
   body .persona h2 {
-    font-size: 2em;
-    font-family: "Raleway", Arial, Helvetica, sans-serif;
+    font-size: 1.5em;
+    font-family: "Proxima Nova", "Lato", Arial, Helvetica, sans-serif;
     font-weight: 700;
-    color: #fafafa;
+    color: #323232;
     text-align: center; }
   body .persona p {
     font-size: 1.25em;
     font-family: "Lato", Arial, Helvetica, sans-serif;
     font-weight: 300;
-    color: #fafafa;
+    color: #323232;
     line-height: 1.5em;
     margin: 0 auto;
     padding-top: 20px;
@@ -288,16 +280,16 @@ body .taskflow {
   padding-right: 25px;
   padding-left: 25px; }
   body .taskflow h2 {
-    font-size: 2em;
-    font-family: "Raleway", Arial, Helvetica, sans-serif;
+    font-size: 1.5em;
+    font-family: "Proxima Nova", "Lato", Arial, Helvetica, sans-serif;
     font-weight: 700;
-    color: #fafafa;
+    color: #ffffff;
     text-align: center; }
   body .taskflow p {
     font-size: 1.25em;
     font-family: "Lato", Arial, Helvetica, sans-serif;
     font-weight: 300;
-    color: #fafafa;
+    color: #ffffff;
     line-height: 1.5em;
     margin: 0 auto;
     padding-top: 20px;
@@ -317,8 +309,8 @@ body .sketches {
   padding-left: 25px;
   text-align: center; }
   body .sketches h2 {
-    font-size: 2em;
-    font-family: "Raleway", Arial, Helvetica, sans-serif;
+    font-size: 1.5em;
+    font-family: "Proxima Nova", "Lato", Arial, Helvetica, sans-serif;
     font-weight: 700;
     color: #2F363B;
     text-align: center; }
@@ -338,15 +330,17 @@ body .sketches {
     margin-top: 20px; }
 
 body .wireframes {
-  background-color: #f2f2f2;
+  background-color: #fafafa;
   padding-top: 50px;
   padding-bottom: 50px;
   padding-right: 25px;
   padding-left: 25px;
+  border-top: 1px solid #d4d4d4;
+  border-bottom: 1px solid #d4d4d4;
   text-align: center; }
   body .wireframes h2 {
-    font-size: 2em;
-    font-family: "Raleway", Arial, Helvetica, sans-serif;
+    font-size: 1.5em;
+    font-family: "Proxima Nova", "Lato", Arial, Helvetica, sans-serif;
     font-weight: 700;
     color: #2F363B;
     text-align: center; }
@@ -379,32 +373,30 @@ body .wireframes {
     margin-top: 20px; }
 
 body .final {
-  background-color: #2980B9;
+  background-color: #ffffff;
   padding-top: 50px;
   padding-bottom: 50px;
   padding-right: 25px;
   padding-left: 25px;
   text-align: center; }
   body .final h2 {
-    font-size: 2em;
-    font-family: "Raleway", Arial, Helvetica, sans-serif;
+    font-size: 1.5em;
+    font-family: "Proxima Nova", "Lato", Arial, Helvetica, sans-serif;
     font-weight: 700;
-    color: #fafafa;
+    color: #323232;
     text-align: center; }
   body .final p {
     font-size: 1.25em;
     font-family: "Lato", Arial, Helvetica, sans-serif;
     font-weight: 300;
-    color: #fafafa;
+    color: #323232;
     line-height: 1.5em;
     margin: 0 auto;
     padding-top: 20px;
     width: 80%;
     min-width: 300px; }
   body .final .button {
-    margin-top: 20px;
-    color: #fafafa;
-    border-color: #fafafa; }
+    margin-top: 20px; }
   body .final ul {
     margin-top: 30px; }
     body .final ul li {
@@ -429,6 +421,10 @@ body .final {
 @media screen and (max-width: 774px) {
   body .wireframes ul li {
     margin-right: 0; } }
+
+@media screen and (max-width: 730px) {
+  body .nav-bar nav {
+    display: none; } }
 
 @media screen and (max-width: 550px) {
   body header div h1 {

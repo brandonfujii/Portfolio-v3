@@ -5,9 +5,12 @@
 $head: "Raleway", Arial, Helvetica, sans-serif;
 $body: "Lato", Arial, Helvetica, sans-serif;
 $serif: "Droid Serif", Arial, Helvetica, sans-serif;
+$proxima: "Proxima Nova", "Lato", Arial, Helvetica, sans-serif;
+$altblack: #323232;
 $darkBlue: #1F2532;
 $red: #ea6565;
 $black: #2F363B;
+$outline: darken(#fafafa, 15%);
 
 * {
   box-sizing: border-box; }
@@ -33,29 +36,21 @@ $black: #2F363B;
 	transition: all 0.3s ease-in-out;
 }
 
-@mixin tag($color: $red) {
+@mixin tag($color: $altblack) {
 	@include font(400, $body, 1em, $color);
 	display: inline-block;
 	padding: 4px 5px 4px 5px;
 	border: 1px solid $color;
 	border-radius: 3px;
 	margin: 5px;
-	@include transition();
-
-
-	&:hover {
-		background-color: $color;
-		color: #fafafa;
-						
-	}
 }
 
-@mixin title($color: #fafafa) {
-	@include font(700, $head, 2em, $color);
+@mixin title($color: $altblack) {
+	@include font(700, $proxima, 1.5em, $color);
 	text-align: center;
 }
-@mixin subheader() {
-	@include font(400, $body, 1.25em);
+@mixin subheader($color: $altblack) {
+	@include font(400, $body, 1.25em, $color);
 	text-align:center;
 	padding-top:20px;
 }
@@ -66,7 +61,9 @@ $black: #2F363B;
 	padding-right: 25px;
 	padding-left: 25px;
 }
-@mixin body($color: #fafafa) {
+
+
+@mixin body($color: $altblack) {
 	@include font(300, $body, 1.25em, $color);
 	line-height: 1.5em;
 	margin: 0 auto;
@@ -76,8 +73,25 @@ $black: #2F363B;
 }
 
 
-
 body {
+
+	.mobile-menu {
+		ul {
+			li {
+				a.active {
+					background-color: darken($black, 5%);
+				}
+			}
+		}
+		.mobile-icon.active {
+			-webkit-transform: translateY(400%);
+			-moz-transform: translateY(400%);
+			-o-transform: translateY(400%);
+			transform: translateY(400%);
+		}
+
+	}
+
 	header {
 		width: 100%;
 		height: 50vh;
@@ -132,10 +146,12 @@ body {
 	}
 
 	.description {
-		@include section($black);
+		@include section(#fafafa);
+		border-top: 1px solid $outline;
+		border-bottom: 1px solid $outline;
 
 		p {
-			@include font(400, $body, 1.25em);
+			@include font(400, $body, 1.25em, $altblack);
 			width: 80%;
 			margin: 0 auto;
 			line-height: 1.5em;
@@ -143,7 +159,7 @@ body {
 	}
 
 	.skills {
-		@include section($darkBlue);
+		@include section(#ffffff);
 		h2 {
 			@include title();
 		}
@@ -153,7 +169,6 @@ body {
 			text-align:center;
 			li {
 				@include tag($red);
-				font-size: 1.5em;
 				padding: 7px;
 
 			}
@@ -161,7 +176,7 @@ body {
 	}
 
 	.deliverables {
-		@include section($darkBlue);
+		@include section(#ffffff);
 
 		h2 {
 			@include title();
@@ -171,20 +186,21 @@ body {
 			padding-top: 30px;
 			text-align: center;
 			li {
-				@include tag(#fafafa);
+				@include tag($altblack);
 				border: 0;
 				&:hover {
 					background-color: transparent;
 
 				}
-				font-size: 1.5em;
 				padding: 7px;
 			}
 		}
 	}
 
 	.explore {
-		@include section($red);
+		@include section(#fafafa);
+		border-top: 1px solid $outline;
+		border-bottom: 1px solid $outline;
 
 		h2 {
 			@include title();
@@ -198,7 +214,7 @@ body {
 	}
 
 	.design {
-		@include section(#f2f2f2);
+		@include section(#ffffff);
 
 		h2 {
 			@include title($black);
@@ -230,7 +246,7 @@ body {
 	}
 
 	.cards {
-		@include section(#f2f2f2);
+		@include section(#ffffff);
 
 		h2 {
 			@include title($black);
@@ -255,7 +271,7 @@ body {
 	}
 
 	.development {
-		@include section($darkBlue);
+		@include section(#ffffff);
 		text-align: center;
 		h2 {
 			@include title();
@@ -270,8 +286,6 @@ body {
 		}
 		.button {
 			margin-top: 30px;
-			color: #fafafa;
-			border-color: #fafafa;
 		}
 
 		.button:last-child {
@@ -305,6 +319,17 @@ body {
 					margin-right: 0;
 				}
 			}
+		}
+	}
+}
+
+@media screen and (max-width: 730px) {
+	body {
+		.nav-bar {
+			nav {
+				display: none;
+			}
+
 		}
 	}
 }

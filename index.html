@@ -16,40 +16,35 @@
         <link rel="stylesheet" type="text/css" href="css/custom.css" />
         <link rel="stylesheet" href="css/main.css">
         <link rel="stylesheet" href="css/animate.css">
-        <link rel="stylesheet" href="css/hover.css">
 		<script type="text/javascript" src="js/modernizr.custom.79639.js"></script>
     </head>
     <body>
 
     	<!-- TEMPORARY PORTFOLIO BY BRANDON FUJII -->
-    	<div class="loading"><h2>Portfolio Under Construction...</h2><hr></div>
-    	<section class="about">
-    		<div class="exit"><i class="fa fa-times"></i></div>
-    		<div class="prof-pic"><img src="images/brandonf.jpg" alt=""></div>
-    		<div class="bio">
-    			<h1>About me</h1>
-    			<h2>I'm Brandon Fujii, a web developer and designer. I have an interest in user experience and product design.</h2>
-    			<p>I'm a Los Angeles native but I'm currently a sophomore Computer Science student at Northwestern University. I enjoy listening to hip-hop, skateboarding, and building cool things.</p>
-    			<aside class="connect">
-    				<a href="mailto:brandonfujii2018@u.northwestern.edu" class="button button-fill">Email me</a><a href="docs/brandonfujii_resume2.pdf" download class="button button-fill">Resume</a><br>
-					<div class="media"><a href="http://github.com/brandonfujii"><i class="fa fa-github"></i></a></div>
-					<div class="media"><a href="http://linkedin.com/in/bfujii"><i class="fa fa-linkedin"></i></a></div>
-					<div class="media"><a href="http://twitter.com/brandonfujii" target="_blank"<i class="fa fa-twitter"></i></a></div>
-    			</aside>
-    		</div>
-    	</section>
+    	<div class="loading"><hr></div>
+    	<div class="mobile-menu">
+			<nav>
+				<ul>
+					<li><a data-nav="projects">Selected Work</a></li>
+					<li><a href="about.html">About</a></li>
+					<li><a data-nav="contact">Contact Us</a></li>
+				</ul>
+			</nav>
+			<div class="mobile-icon">
+				<i class="fa fa-bars"></i>
+			</div>
+		</div>
         <div class="container">
-            <header class="clearfix">
+            <div class="nav clearfix">
 				<img src="images/personal_logo_red.png">
 				<h1>Brandon Fujii<span>DESIGNER &amp; DEVELOPER</span></h1>
 				
 				<ul class="clearfix">
-					<li><a data-nav="projects">Projects</a></li>
-					<li class="about-button"><a class="button button-fill">Who Am I?</a></li>
+					<li><a class="active" data-nav="projects">Selected Work</a></li>
+					<li><a href="about.html">About</a></li>
+					<li class="about-button"><a data-nav="contact" class="button button-fill">Contact me</a></li>
 				</ul>
-
-				
-			</header>
+			</div>
 
             <div id="slider" class="sl-slider-wrapper">
 
@@ -79,7 +74,7 @@
 							<div class="bg-img bg-img-3"></div>
 							<h2>Full-time Student</h2>
 							<blockquote><p>I study CS at Northwestern University<br>
-							<a data-nav="projects" class="button button-fill">View Projects</a></p></blockquote>
+							<a href="about.html" class="button button-fill">Learn about me</a></p></blockquote>
 						</div>
 					</div>
 				</div><!-- /sl-slider -->
@@ -92,68 +87,95 @@
 	
 			</div><!-- /slider-wrapper -->
 
-			<div class="content-wrapper">
-				<section class="grid" id="projects">
-						<div class="box"><a href="wanderlust.html" class="no-touch">
-					        <div class="img"><img src="images/wanderlust-mockup.jpg" alt="img"></div>
+			<div class="content-wrapper clearfix">
+				<hr>
+				<section class="grid clearfix" id="projects">
+						<div class="box wow fadeIn"><a href="wanderlust.html" class="no-touch">
+					        <div class="img"><img src="images/wanderlustdisplay.jpg" alt="img"></div>
 					        <div class="info">
 					          <h1>Wanderlust Photosharing App</h1>
 					          <h2>A photo-sharing feature for Wanderlust, an app to explore travel inspiration.</h2>
 					          <ul>
-					          		<li class="tag">User Experience</li>
-					          		<li class="tag">User Interface</li>
+					          		<li class="tag">UX</li>
+					          		<li class="tag">UI</li>
 					          </ul>
 					        </div></a>
 					    </div>
-					    <div class="box"><a href="pulseband.html" class="no-touch">
-					        <div class="img"><img src="images/pulseband.jpg" alt="img"></div>
+					    <div class="box wow fadeIn"><a href="pulseband.html" class="no-touch">
+					        <div class="img"><img src="images/pulsebandipad.jpg" alt="img"></div>
 					        <div class="info">
 					          <h1>Pulseband Dashboard</h1>
 					          <h2>A web dashboard that populates medical data from the Pulseband using AngularJS and d3.js</h2>
 					          <ul>
-					          		<li class="tag">User Inteface</li>
-					          		<li class="tag">Front-end Development</li>
+					          		<li class="tag">UI</li>
+					          		<li class="tag">Front-end</li>
 					          </ul>
 					        </div></a>
 					    </div>	
-					    <div class="box"><a href="designation.html" class="no-touch">
-					        <div class="img"><img src="images/designationalum.jpg" alt="DESIGNATION Alumni Page"></div>
+					    <div class="box wow fadeIn"><a href="designation.html" class="no-touch">
+					        <div class="img"><img src="images/designationmac.png" alt="DESIGNATION Alumni Page"></div>
 					        <div class="info">
 					          <h1>DESIGNATION Alumni Page</h1>
 					          <h2>A card-based search page, in which an employer can browse recent DESIGNATION graduates for hire</h2>
 					          <ul>
-					          		<li class="tag">User Interface</li>
-					          		<li class="tag">Front-end Development</li>
+					          		<li class="tag">UI</li>
+					          		<li class="tag">Front-end</li>
 					          </ul>
 					        </div></a>
 					    </div>	
-					    <div class="box"><a class="no-touch">
-					        <div class="img"><img src="images/virtualsitter.jpg" alt="img"></div>
+					    <div class="box box-2 wow fadeIn"><a class="no-touch">
+					        <div class="img virtualsitter"><img src="images/virtualsittermac.png" alt="img"></div>
 					        <div class="info">
 					          <h1>Virtual Sitter</h1>
 					          <h2>Coming Soon - A patient monitoring web/mobile app using the Microsoft Kinect</h2>
 					          <ul>
-					          		<li class="tag">User Experience</li>
-					          		<li class="tag">User Interface</li>
-					          		<li class="tag">Back-end Development</li>
+					          		<li class="tag">UX/UI</li>
 					          		<li class="tag">Databases</li>
 					          </ul>
 					        </div></a>
-					    </div>		
+					    </div>	
+					    <div class="box box-2 wow fadeIn"><a class="no-touch">
+					        <div class="img"><img src="images/forkly.jpeg" alt="img"></div>
+					        <div class="info">
+					          <h1>Forkly</h1>
+					          <h2>Coming Soon - A Northwestern-founded startup, Forkly is an intelligent system dedicated to recommending new recipe and ingredient alternatives by learning users' cooking and eating habits.</h2>
+					          <ul>
+					          		<li class="tag">UX/UI</li>
+					          		<li class="tag">Mobile</li>
+					          </ul>
+					        </div></a>
+					    </div>	
+					    <div class="box box-2 wow fadeIn"><a class="no-touch">
+					        <div class="img"><img src="images/usercentricbanner.jpg" alt="img"></div>
+					        <div class="info">
+					          <h1>Usercentric</h1>
+					          <h2>Coming Soon - A product development agency that provides web &amp; mobile designs for small businesses.</h2>
+					          <ul>
+					          		<li class="tag">UX/UI</li>
+					          		<li class="tag">Web</li>
+					          		<li class="tag">Mobile</li>
+					          </ul>
+					        </div></a>
+					    </div>	
+
 				</section>
-				<section class="connect">
-					<ul>
-						<li><a href="mailto:brandonfujii2018@u.northwestern.edu"><i class="fa fa-envelope"></i></a></li>
-						<li><a href="http://github.com/brandonfujii" target="_blank"><i class="fa fa-github"></i></a></li>
-						<li><a href="http://linkedin.com/in/bfujii" target="_blank"><i class="fa fa-linkedin"></i></a></li>
-						<li><a href="http://twitter.com/brandonfujii" target="_blank"><i class="fa fa-twitter"></i></a></li>
+				
+			</div>
+			<section class="connect clearfix" id="contact">
+					<div class="contact">
+						<a href="mailto:brandonfujii2018@u.northwestern.edu">Email me!</a>
+						<a href="docs/brandonfujii_resume2.jpg">Download my resume</a>
+					</div>
+
+					<ul class="clearfix">
+						<li class="clearfix"><a href="http://github.com/brandonfujii" target="_blank"><i class="fa fa-github"></i></a></li>
+						<li class="clearfix"><a href="http://linkedin.com/in/bfujii" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+						<li class="clearfix"><a href="http://twitter.com/brandonfujii" target="_blank"><i class="fa fa-twitter"></i></a></li>
 					</ul>
 				</section>
 				<footer>
-					<p>&copy; Brandon Fujii All Rights Reserved</p>
+					<p>&copy; Created by Brandon Fujii</p>
 				</footer>
-			</div>
-
         </div>
 		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
 		<script type="text/javascript" src="js/jquery.ba-cond.min.js"></script>
@@ -212,6 +234,8 @@
 		</script>
 		<script src="js/velocity.js"></script>
 		<script src="js/wow.min.js"></script>
+		<script src="js/headroom.js"></script>
+		<script src="js/smoothstate.min.js"></script>
         <script>
            new WOW().init();
         </script>

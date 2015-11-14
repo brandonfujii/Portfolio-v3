@@ -4,6 +4,15 @@
 * {
   box-sizing: border-box; }
 
+body .mobile-menu ul li a.active {
+  background-color: #24292d; }
+
+body .mobile-menu .mobile-icon.active {
+  -webkit-transform: translateY(400%);
+  -moz-transform: translateY(400%);
+  -o-transform: translateY(400%);
+  transform: translateY(400%); }
+
 body header {
   width: 100%;
   height: 50vh;
@@ -29,18 +38,11 @@ body header {
         border: 1px solid #fafafa;
         border-radius: 3px;
         margin: 5px;
-        -webkit-transition: all 0.3s ease-in-out;
-        -moz-transition: all 0.3s ease-in-out;
-        -o-transition: all 0.3s ease-in-out;
-        transition: all 0.3s ease-in-out;
         border-color: transparent;
         -webkit-transition: all 0.3s ease-in-out;
         -moz-transition: all 0.3s ease-in-out;
         -o-transition: all 0.3s ease-in-out;
         transition: all 0.3s ease-in-out; }
-        body header nav ul li:hover {
-          background-color: #fafafa;
-          color: #fafafa; }
         body header nav ul li a {
           color: #fafafa; }
         body header nav ul li:hover {
@@ -67,31 +69,33 @@ body header {
       padding-top: 20px; }
 
 body .description {
-  background-color: #475F77;
+  background-color: #fafafa;
   padding-top: 50px;
   padding-bottom: 50px;
   padding-right: 25px;
-  padding-left: 25px; }
+  padding-left: 25px;
+  border-top: 1px solid #d4d4d4;
+  border-bottom: 1px solid #d4d4d4; }
   body .description p {
     font-size: 1.25em;
     font-family: "Lato", Arial, Helvetica, sans-serif;
     font-weight: 400;
-    color: #fafafa;
+    color: #323232;
     width: 80%;
     margin: 0 auto;
     line-height: 1.5em; }
 
 body .skills {
-  background-color: #1F2532;
+  background-color: #ffffff;
   padding-top: 50px;
   padding-bottom: 50px;
   padding-right: 25px;
   padding-left: 25px; }
   body .skills h2 {
-    font-size: 2em;
-    font-family: "Raleway", Arial, Helvetica, sans-serif;
+    font-size: 1.5em;
+    font-family: "Proxima Nova", "Lato", Arial, Helvetica, sans-serif;
     font-weight: 700;
-    color: #fafafa;
+    color: #323232;
     text-align: center; }
   body .skills ul {
     padding-top: 30px;
@@ -106,27 +110,19 @@ body .skills {
       border: 1px solid #2980B9;
       border-radius: 3px;
       margin: 5px;
-      -webkit-transition: all 0.3s ease-in-out;
-      -moz-transition: all 0.3s ease-in-out;
-      -o-transition: all 0.3s ease-in-out;
-      transition: all 0.3s ease-in-out;
-      font-size: 1.5em;
       padding: 7px; }
-      body .skills ul li:hover {
-        background-color: #2980B9;
-        color: #fafafa; }
 
 body .deliverables {
-  background-color: #1F2532;
+  background-color: #ffffff;
   padding-top: 50px;
   padding-bottom: 50px;
   padding-right: 25px;
   padding-left: 25px; }
   body .deliverables h2 {
-    font-size: 2em;
-    font-family: "Raleway", Arial, Helvetica, sans-serif;
+    font-size: 1.5em;
+    font-family: "Proxima Nova", "Lato", Arial, Helvetica, sans-serif;
     font-weight: 700;
-    color: #fafafa;
+    color: #323232;
     text-align: center; }
   body .deliverables ul {
     padding-top: 30px;
@@ -135,42 +131,36 @@ body .deliverables {
       font-size: 1em;
       font-family: "Lato", Arial, Helvetica, sans-serif;
       font-weight: 400;
-      color: #fafafa;
+      color: #323232;
       display: inline-block;
       padding: 4px 5px 4px 5px;
-      border: 1px solid #fafafa;
+      border: 1px solid #323232;
       border-radius: 3px;
       margin: 5px;
-      -webkit-transition: all 0.3s ease-in-out;
-      -moz-transition: all 0.3s ease-in-out;
-      -o-transition: all 0.3s ease-in-out;
-      transition: all 0.3s ease-in-out;
       border: 0;
-      font-size: 1.5em;
       padding: 7px; }
-      body .deliverables ul li:hover {
-        background-color: #fafafa;
-        color: #fafafa; }
       body .deliverables ul li:hover {
         background-color: transparent; }
 
 body .explore {
-  background-color: #2980B9;
+  background-color: #fafafa;
   padding-top: 50px;
   padding-bottom: 50px;
   padding-right: 25px;
-  padding-left: 25px; }
+  padding-left: 25px;
+  border-top: 1px solid #d4d4d4;
+  border-bottom: 1px solid #d4d4d4; }
   body .explore h2 {
-    font-size: 2em;
-    font-family: "Raleway", Arial, Helvetica, sans-serif;
+    font-size: 1.5em;
+    font-family: "Proxima Nova", "Lato", Arial, Helvetica, sans-serif;
     font-weight: 700;
-    color: #fafafa;
+    color: #323232;
     text-align: center; }
   body .explore p {
     font-size: 1.25em;
     font-family: "Lato", Arial, Helvetica, sans-serif;
     font-weight: 300;
-    color: #fafafa;
+    color: #323232;
     line-height: 1.5em;
     margin: 0 auto;
     padding-top: 20px;
@@ -181,7 +171,7 @@ body .explore {
     font-size: 1.25em;
     font-family: "Lato", Arial, Helvetica, sans-serif;
     font-weight: 300;
-    color: #fafafa;
+    color: #323232;
     line-height: 1.5em;
     margin: 0 auto;
     padding-top: 20px;
@@ -192,14 +182,14 @@ body .explore {
       list-style: square; }
 
 body .sprint {
-  background-color: #f2f2f2;
+  background-color: #ffffff;
   padding-top: 50px;
   padding-bottom: 50px;
   padding-right: 25px;
   padding-left: 25px; }
   body .sprint h2 {
-    font-size: 2em;
-    font-family: "Raleway", Arial, Helvetica, sans-serif;
+    font-size: 1.5em;
+    font-family: "Proxima Nova", "Lato", Arial, Helvetica, sans-serif;
     font-weight: 700;
     color: #2F363B;
     text-align: center; }
@@ -234,16 +224,16 @@ body .design {
   padding-right: 25px;
   padding-left: 25px; }
   body .design h2 {
-    font-size: 2em;
-    font-family: "Raleway", Arial, Helvetica, sans-serif;
+    font-size: 1.5em;
+    font-family: "Proxima Nova", "Lato", Arial, Helvetica, sans-serif;
     font-weight: 700;
-    color: #fafafa;
+    color: #ffffff;
     text-align: center; }
   body .design p {
     font-size: 1.25em;
     font-family: "Lato", Arial, Helvetica, sans-serif;
     font-weight: 300;
-    color: #fafafa;
+    color: #ffffff;
     line-height: 1.5em;
     margin: 0 auto;
     padding-top: 20px;
@@ -274,22 +264,22 @@ body .design {
       margin-right: 0; }
 
 body .style {
-  background-color: #02336D;
+  background-color: #ffffff;
   padding-top: 50px;
   padding-bottom: 50px;
   padding-right: 25px;
   padding-left: 25px; }
   body .style h3 {
-    font-size: 2em;
-    font-family: "Raleway", Arial, Helvetica, sans-serif;
+    font-size: 1.5em;
+    font-family: "Proxima Nova", "Lato", Arial, Helvetica, sans-serif;
     font-weight: 700;
-    color: #fafafa;
+    color: #323232;
     text-align: center; }
   body .style p {
     font-size: 1.25em;
     font-family: "Lato", Arial, Helvetica, sans-serif;
     font-weight: 300;
-    color: #fafafa;
+    color: #323232;
     line-height: 1.5em;
     margin: 0 auto;
     padding-top: 20px;
@@ -305,22 +295,22 @@ body .style {
       height: auto; }
 
 body .sketch {
-  background-color: #02336D;
+  background-color: #ffffff;
   padding-top: 50px;
   padding-bottom: 50px;
   padding-right: 25px;
   padding-left: 25px; }
   body .sketch h2 {
-    font-size: 2em;
-    font-family: "Raleway", Arial, Helvetica, sans-serif;
+    font-size: 1.5em;
+    font-family: "Proxima Nova", "Lato", Arial, Helvetica, sans-serif;
     font-weight: 700;
-    color: #fafafa;
+    color: #323232;
     text-align: center; }
   body .sketch p {
     font-size: 1.25em;
     font-family: "Lato", Arial, Helvetica, sans-serif;
     font-weight: 300;
-    color: #fafafa;
+    color: #323232;
     line-height: 1.5em;
     margin: 0 auto;
     padding-top: 20px;
@@ -340,22 +330,24 @@ body .sketch {
         height: auto; }
 
 body .final {
-  background-color: #02336D;
+  background-color: #fafafa;
   padding-top: 50px;
   padding-bottom: 50px;
   padding-right: 25px;
-  padding-left: 25px; }
+  padding-left: 25px;
+  border-top: 1px solid #d4d4d4;
+  border-bottom: 1px solid #d4d4d4; }
   body .final h2 {
-    font-size: 2em;
-    font-family: "Raleway", Arial, Helvetica, sans-serif;
+    font-size: 1.5em;
+    font-family: "Proxima Nova", "Lato", Arial, Helvetica, sans-serif;
     font-weight: 700;
-    color: #fafafa;
+    color: #323232;
     text-align: center; }
   body .final p {
     font-size: 1.25em;
     font-family: "Lato", Arial, Helvetica, sans-serif;
     font-weight: 300;
-    color: #fafafa;
+    color: #323232;
     line-height: 1.5em;
     margin: 0 auto;
     padding-top: 20px;
@@ -374,22 +366,22 @@ body .final {
         height: auto; }
 
 body .frontend {
-  background-color: #475F77;
+  background-color: #ffffff;
   padding-top: 50px;
   padding-bottom: 50px;
   padding-right: 25px;
   padding-left: 25px; }
   body .frontend h2 {
-    font-size: 2em;
-    font-family: "Raleway", Arial, Helvetica, sans-serif;
+    font-size: 1.5em;
+    font-family: "Proxima Nova", "Lato", Arial, Helvetica, sans-serif;
     font-weight: 700;
-    color: #fafafa;
+    color: #323232;
     text-align: center; }
   body .frontend p {
     font-size: 1.25em;
     font-family: "Lato", Arial, Helvetica, sans-serif;
     font-weight: 300;
-    color: #fafafa;
+    color: #323232;
     line-height: 1.5em;
     margin: 0 auto;
     padding-top: 20px;
@@ -398,22 +390,22 @@ body .frontend {
 
 body .angular {
   text-align: center;
-  background-color: #2980B9;
+  background-color: #ffffff;
   padding-top: 50px;
   padding-bottom: 50px;
   padding-right: 25px;
   padding-left: 25px; }
   body .angular h2 {
-    font-size: 2em;
-    font-family: "Raleway", Arial, Helvetica, sans-serif;
+    font-size: 1.5em;
+    font-family: "Proxima Nova", "Lato", Arial, Helvetica, sans-serif;
     font-weight: 700;
-    color: #fafafa;
+    color: #323232;
     text-align: center; }
   body .angular p {
     font-size: 1.25em;
     font-family: "Lato", Arial, Helvetica, sans-serif;
     font-weight: 300;
-    color: #fafafa;
+    color: #323232;
     line-height: 1.5em;
     margin: 0 auto;
     padding-top: 20px;
@@ -421,9 +413,7 @@ body .angular {
     min-width: 300px;
     text-align: justify; }
   body .angular .button {
-    margin-top: 30px;
-    color: #fafafa;
-    border-color: #fafafa; }
+    margin-top: 30px; }
   body .angular .button:last-child {
     margin-left: 30px; }
 
@@ -435,6 +425,10 @@ body .angular {
   body .design ul li {
     margin-right: 0;
     margin-bottom: 20px; } }
+
+@media screen and (max-width: 730px) {
+  body .nav-bar nav {
+    display: none; } }
 
 @media screen and (max-width: 450px) {
   body header div h1 {
