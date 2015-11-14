@@ -51,6 +51,7 @@ body .button-fill {
 body .button:hover {
   color: #fafafa;
   border-color: #ea6565;
+  background-color: #ea6565;
 }
 body .button-fill::before {
   content: '';
@@ -179,6 +180,8 @@ a {
   opacity: 0.5;
 }
 
+
+
 .nav ul li a:hover {
   color: #000000;
   opacity: 1;
@@ -195,6 +198,7 @@ a {
 	top: 15px;
 	color: #ea6565;
 	border-color: #ea6565;
+  opacity: 1;
 }
 
 .nav .button:hover {
