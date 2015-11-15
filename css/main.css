@@ -62,6 +62,8 @@ body .mobile-menu {
         padding: 12px; }
       body .mobile-menu nav ul li:hover {
         background-color: #24292d; }
+      body .mobile-menu nav ul li a.active {
+        background-color: #24292d; }
   body .mobile-menu ul.active {
     -webkit-transform: translateY(0);
     -moz-transform: translateY(0);

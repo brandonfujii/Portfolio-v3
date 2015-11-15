@@ -75,6 +75,10 @@ body {
 				&:hover {
 					background-color: darken($black, 5%);
 				}
+
+				a.active {
+					background-color: darken($black, 5%);
+				}
 			}
 			}
 		}
