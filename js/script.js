@@ -9,6 +9,7 @@ var $button = $(".button");
 var $mobileItem = $(".mobile-menu ul li a");
 var $mobileMenu = $(".mobile-menu ul");
 var $mobileIcon = $(".mobile-menu .mobile-icon");
+var $logo = $(".loading .logo img");
 
 // Cache exisiting pages
 (function ($) {
@@ -66,9 +67,12 @@ $(document).scroll(function() {
 });
 
 
+
+
 $(document).ready(function() {
 	loadGrow();
 	window.setTimeout(load, 3000);
+	animateDiv($logo);
 });
 
 function load() {
@@ -82,6 +86,10 @@ function loadGrow() {
 		width: "100%"
 	}, 2750);
 
+}
+
+function animateDiv(obj) {
+	obj.addClass("spin");
 }
 
 
