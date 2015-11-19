@@ -10,7 +10,7 @@ var $mobileItem = $(".mobile-menu ul li a");
 var $mobileMenu = $(".mobile-menu ul");
 var $mobileIcon = $(".mobile-menu .mobile-icon");
 var $logo = $(".loading .logo img");
-
+var $navLogo = $(".container .nav h1 span");
 // Cache exisiting pages
 (function ($) {
     'use strict';
@@ -133,7 +133,6 @@ $mobileItem.on("click", function(e) {
 		$sect.velocity("scroll", {duration: 750, offset: -70});
 	}
 })
-
 
 
 
