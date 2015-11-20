@@ -76,7 +76,7 @@ body {
 		}
 
 		.logo {
-			
+			@include transition();
 			position: relative;
 			width: 5%;
 			min-width: 50px;
