@@ -270,6 +270,31 @@ body {
 		
 	}
 
+	.final  {
+		@include section(#ffffff);
+
+		h2 {
+			@include title($black);
+		}
+
+		p {
+			@include body($black);
+		}
+
+		div {
+
+			width: 80%;
+			min-width: 250px;
+			margin: 0 auto;
+			margin-top: 20px;
+
+			img {
+				width: 100%;
+				height: auto;
+			}
+		}
+	}
+
 	.development {
 		@include section(#ffffff);
 		text-align: center;

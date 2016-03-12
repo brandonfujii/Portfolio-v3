@@ -235,6 +235,37 @@ body .cards {
       width: 100%;
       height: auto; }
 
+body .final {
+  background-color: #ffffff;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  padding-right: 25px;
+  padding-left: 25px; }
+  body .final h2 {
+    font-size: 1.5em;
+    font-family: "Proxima Nova", "Lato", Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    color: #2F363B;
+    text-align: center; }
+  body .final p {
+    font-size: 1.25em;
+    font-family: "Lato", Arial, Helvetica, sans-serif;
+    font-weight: 300;
+    color: #2F363B;
+    line-height: 1.5em;
+    margin: 0 auto;
+    padding-top: 20px;
+    width: 80%;
+    min-width: 300px; }
+  body .final div {
+    width: 80%;
+    min-width: 250px;
+    margin: 0 auto;
+    margin-top: 20px; }
+    body .final div img {
+      width: 100%;
+      height: auto; }
+
 body .development {
   background-color: #ffffff;
   padding-top: 50px;
